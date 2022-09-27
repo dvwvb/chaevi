@@ -1,0 +1,128 @@
+
+
+
+
+	<script>
+	alert("잘못된 접근입니다.");
+	ajaxUnLoad();
+	</script>
+	<style>
+
+/* css */
+
+</style>
+
+	<script>
+	alert("잘못된 접근입니다.");
+	ajaxUnLoad();
+	</script>
+	
+	<article id="cmContentModal">
+		<button onclick="ajaxUnLoad();" title="Close" class="modal-close-btn"><i class="xi-close-thin"></i></button>
+		<form action="https://chaevi.com/kr/partnership/step02_ok.php" name="form2" id="form2" method="post" enctype="multipart/form-data" onsubmit="modal_sendit();return false">
+		<input type="hidden" name="lang" value="1">
+		<input type="hidden" name="trade_code" value="">
+		<div class="cm-content-modal-inner">
+			<h3 class="cm-content-tit">랜드오너 설문조사</h3>
+			<h4 class="bbs-write-tbl-tit">랜드오너 모집 기본 정보</h4>
+			<table class="bbs-write-tbl">
+				<caption>랜드오너 설문조사 폼입니다.</caption>
+				<colgroup>
+					<col style="width:90px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">설치 장소</th>
+						<td>
+							<div class="survey-select-con">
+								<span class="survey-select-item"><input type="radio" name="location" id="installArea1" value="1" checked=""><label for="installArea1">주차장</label></span>
+								<span class="survey-select-item"><input type="radio" name="location" id="installArea2" value="2"><label for="installArea2">나대지(빈땅)</label></span>
+								<span class="survey-select-item"><input type="radio" name="location" id="installArea3" value="3"><label for="installArea3">업무시설</label></span>
+								<span class="survey-select-item"><input type="radio" name="location" id="installArea4" value="4"><label for="installArea4">대형쇼핑몰</label></span>
+								<span class="survey-select-item"><input type="radio" name="location" id="installArea5" value="5"><label for="installArea5">주유소/충전소</label></span>
+								<span class="survey-select-item"><input type="radio" name="location" id="installArea6" value="6"><label for="installArea6">공동주택</label></span>
+								<span class="survey-select-item col2"><input type="radio" name="location" id="installArea7" value="7"><label for="installArea7">빌라 / 도시형생활주택</label></span>
+								<span class="survey-select-item"><input type="radio" name="location" id="installArea8" value="8"><label for="installArea8">관광시설</label></span>
+								<span class="survey-select-item col3"><input type="radio" name="location" id="installArea9" value="9"><label for="installArea9">그 외 기타</label></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">설치 환경</th>
+						<td>
+							<div class="survey-select-con col5">
+								<span class="survey-select-item"><input type="radio" name="inev" id="installEnviron1" value="1" checked=""><label for="installEnviron1">실내</label></span>
+								<span class="survey-select-item"><input type="radio" name="inev" id="installEnviron2" value="2"><label for="installEnviron2">실외</label></span>
+								<span class="survey-select-item"><input type="radio" name="inev" id="installEnviron3" value="3"><label for="installEnviron3">노상</label></span>
+								<span class="survey-select-item"><input type="radio" name="inev" id="installEnviron4" value="4"><label for="installEnviron4">지상</label></span>
+								<span class="survey-select-item"><input type="radio" name="inev" id="installEnviron5" value="5"><label for="installEnviron5">지하</label></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">주차 면수</th>
+						<td>
+							<input type="text" class="write-input" name="fw" placeholder="00면수" />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">개방 유형</th>
+						<td>
+							<div class="survey-select-con">
+								<span class="survey-select-item col2"><input type="radio" name="type" id="openType1" value="1" checked=""><label for="openType1">완전개방(누구나 사용가능)</label></span>
+								<span class="survey-select-item col2"><input type="radio" name="type" id="openType2" value="2"><label for="openType2">부분개방(입주민·방문자 위주)</label></span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">신청 사유</th>
+						<td>
+							<textarea name="content" class="write-textarea" placeholder="ex) 유동차량이 많은 지역이라서, 전기차 유저가 많아서 등..." style="height:80px;"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">장소 사진</th>
+						<td>
+							<input type="file" class="write-input" name="bbs_file">
+							<input type="file" class="write-input" name="bbs_file2">
+							<input type="file" class="write-input" name="bbs_file3">
+							<span class="write-sub-txt2">※ 2개 이상의 파일을 등록하세요.</span>
+							<span class="write-sub-txt2">※ zip, jpg, png, gif 파일만 등록할 수 있습니다.</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="cm-btn-controls">
+				<button type="button" onclick="ajaxLoad('survey_modal_0103d5.html?trade_code=');" title="Close" class="btn-style01 btn-small">이전</button>
+				<a href="javascript:;" class="btn-style02 btn-small" onclick="modal_sendit();">제출</a>
+			</div>
+		</div>
+		</form>
+	</article>
+
+
+<script>
+
+function modal_sendit(){
+
+	var f=document.form2;
+
+	if(f.fw.value=="") {
+		alert("주차면수를 입력해 주세요.");
+		f.fw.focus();
+		return false;
+	}
+
+	if(f.content.value=="") {
+		alert("신청사유를 입력해 주세요.");
+		f.content.focus();
+		return false;
+	}
+
+
+	f.submit();
+
+}
+
+</script>

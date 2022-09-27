@@ -1,0 +1,785 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : content.css
+ * description : 서브페이지 컨텐츠 CSS
+ * date : 2022-03-14
+******************************************************** */
+
+/* ******************  서브공통 ********************** */
+/* -------- 공통 :: 타이틀 -------- */
+/* 타이틀 1 */
+.cm-content-tit{font-size:4.6rem; letter-spacing:-0.05em; color:#000; text-align:center; margin-bottom:2.17em}
+.cm-content-tit.line{line-height:1.52;}
+.cm-content-sub-tit{font-size:1.8rem; color:#666; letter-spacing:-0.065em; margin-top:2.2rem; line-height:1.5;}
+.cm-content-tit-box{margin-bottom:5.5rem; text-align:center;}
+.cm-content-tit-box .cm-content-tit{margin-bottom:0;}
+.cm-btn-style01{display:inline-flex; justify-content:space-between; align-items:center; width:24.5rem; height:6rem; border:1px solid #000; background-color:#f4f4f4; box-sizing:border-box; padding:0 2rem 0 3rem; font-size:1.6rem; letter-spacing:-0.078em; color:#000;}
+.cm-btn-style01.blue{background-color:var(--sub-color1); border-color:var(--sub-color1); color:#fff;}
+/* 타이틀2 */
+.cm-tit-box{text-align:center; margin-bottom:8rem;}
+.cm-tit-box .cm-content-tit{margin-bottom:0.54em;}
+.cm-content-txt{font-size:2rem; letter-spacing:-0.065em; line-height:1.65; color:#555;}
+.cm-example-txt{position: absolute; font-size:1.5rem; letter-spacing:-0.075em; color:#6b6b6b;}
+
+/* -------- 공통 :: 모달 폼 -------- */
+#cmContentModal{position:relative; max-width:600px; margin:100px auto; }
+#cmContentModal .modal-close-btn{top:0; right:-45px;}
+.cm-content-modal-inner{background-color:#fff; padding:6rem 4rem;}
+.cm-content-modal-inner .cm-content-tit{text-align:left; font-size:4rem; margin-bottom:1em}
+.cm-content-modal-inner .cm-content-tit .sub-tit{display:block; font-size:0.5em; font-weight:400; letter-spacing:-0.5px; margin-top:0.7em;}
+.cm-content-modal-inner .bbs-write-tbl-tit{font-size:2.6rem; letter-spacing:-0.075em; font-weight:500; color:#000; margin-bottom:1em}
+.cm-modal-tbl-txt{
+	min-height:42px;
+	display:flex;
+	align-items:center; 
+	background-color:#f2f2f2;
+	border:1px solid #f2f2f2;
+	font-size:1em; 
+	color:#444;
+	line-height:1.1;
+	padding:1em;
+	vertical-align:middle;
+	box-sizing:border-box;
+}
+.cm-content-modal-inner .cm-btn-controls{margin-top:45px;}
+
+/* -------- 공통 스크롤바  -------- */
+.custom-scrollbar-cover,
+.cm-scroll-drag-guide{display:none;}
+
+/* -------- 공통 :: 탭 -------- */
+/* Tab 공통 스타일 */
+.sub-tab-wrapper-style{position:relative; height:60px; margin-bottom:15px; }
+.sub-tab-list-style ul{display:table; width:100%; height:100%; table-layout:fixed;}
+.sub-tab-list-style ul:after{display:none}
+.sub-tab-list-style ul li{/* float:left; */ display:table-cell; vertical-align:middle; position:relative; width:20%; background-color:#fff; border:1px solid #e5e5e5; border-left:0 }
+.sub-tab-list-style ul li:first-child{border-left:1px solid #e5e5e5;}
+.sub-tab-list-style ul li a{display:table; height:58px; width:100%; }
+.sub-tab-list-style ul li a em{display:table-cell; vertical-align:middle; color:#494949; font-size:18px; letter-spacing:-0.30px; text-align:center;}
+.sub-tab-list-style ul li.selected{z-index:1; }
+.sub-tab-list-style ul li.selected a{background-color:#333; border-color:#333}
+.sub-tab-list-style ul li.selected a em{color:#fff; }
+/* Tab Fixed Move*/
+.sub-tab-list-style.top-fixed{position:fixed; top:70px; left:0; width:100%; height:60px;}
+/* Mobile Tab Drop Menu */
+.sub-drop-open-btn-style{display:none}
+
+@media all and (min-width:1025px){
+	/* Tab Fixed Background */
+	.sub-tab-list-style:before{position:absolute; top:0px; bottom:0px; left:50%; width:0; content:""; background-color:#fff; border-bottom:1px solid #e5e5e5; transition:all 0.5s}
+	.sub-tab-list-style.top-fixed:before{width:100%; margin-left:-50%}
+}
+
+/* ========================================================
+ * CHAEVI 
+======================================================== */
+/* ******************  CHAEVI :: 채비스토리 ********************** */
+.brand-content{margin-bottom:24.6rem;}
+.brand-content:last-child{margin-bottom:0rem;}
+/* con02 */
+.brand-content.con02{margin-bottom:15.8rem;}
+.brand-content.con02 .cm-content-txt{color:rgba(0,0,0,0.5);}
+.brand-rnd-con{background:no-repeat center; background-size:cover; background-image:url('../images/content/brand_rnd_bg.jpg');}
+.brand-rnd-item-wrap{display: flex; width:100%;}
+.brand-rnd-item{width:33.33%; text-align:center; padding:22rem 8.3rem 20rem; box-sizing:border-box; border-right:1px solid rgba(246,246,246,0.1);}
+.brand-rnd-item:last-child{border-right:0;}
+.brand-rnd-item .txt-box{color:#fff; min-height:25rem;}
+.brand-rnd-item .txt-box .tit{font-size:3.6rem; letter-spacing:-0.075em; line-height:1.94; margin-bottom:2rem;}
+.brand-rnd-item .txt-box .sub-tit{font-size:1.8rem; letter-spacing:-0.075em; line-height:1.83; font-weight:400;}
+.brand-rnd-item .txt-box .txt{font-size:1.6rem; letter-spacing:-0.075em; line-height:1.6; opacity:0.5; margin-top:1.5rem;}
+.brand-rnd-item .txt-box .txt.co-main{color:var(--main-color); opacity:1;}
+.brand-rnd-item .con-box{display: flex; justify-content: center; margin-top:4rem;}
+/* 원형 */
+.brand-rnd-item .con-box .circle-item{display: flex; align-items:center; justify-content: center; width:13rem; height:13rem; background:#20576f; -webkit-border-radius:50%;border-radius:50%; text-align:center; margin:0 1rem;}
+.brand-rnd-item .con-box .circle-item dl dt{font-size:1.6rem; letter-spacing:-0.075em; line-height:1.6; opacity:0.5; color:#fff;}
+.brand-rnd-item .con-box .circle-item dl dd{font-size:4rem; letter-spacing:-0.075em; line-height:1; color:var(--main-color); font-weight:700;}
+.brand-rnd-item .con-box .circle-item p.txt{font-size:2.4rem; letter-spacing:-0.025em; color:var(--main-color); font-weight:700;}
+/* 사각형 */
+.brand-rnd-item .con-box.square-con-box{display: flex; justify-content: space-between; margin-top:2rem;}
+.brand-rnd-item .con-box .square-item{width:calc(33.33% - 1rem); color:var(--main-color); background:#20576f; -webkit-border-radius:5px;border-radius:5px; text-align:left; padding:3rem 1.9rem; box-sizing:border-box;}
+.brand-rnd-item .con-box .square-item .years{font-size:2rem; letter-spacing:-0.075em; line-height:1.3; margin-bottom:1.4rem;}
+.brand-rnd-item .con-box .square-item dl{position: relative; font-size:1.5rem; letter-spacing:-0.075em; line-height:1.73;}
+.brand-rnd-item .con-box .square-item dl dt{position: absolute; top:0; left:0; opacity:0.3;}
+.brand-rnd-item .con-box .square-item dl dd{padding-left:7.6rem; letter-spacing:-0.025em; font-weight:700;}
+.brand-rnd-item .plus-txt{font-size:1.4rem; line-height:1.86; letter-spacing:-0.075em; color:rgba(235,235,235,0.5); text-align:right;}
+/* con03 */
+/* 상단 로고 */
+.award-logo-list{display: flex; margin-bottom:16rem;}
+.award-logo-list .list-item{display: table; width:25%; text-align:center; padding:0 1rem; box-sizing:border-box;}
+.award-logo-list .list-item span{display: table-cell; vertical-align:middle;}
+.award-logo-list .list-item img{max-width:100%;}
+.brand-certifi-con{margin-bottom:11rem;}
+.brand-certifi-con .certifi-tit{margin-bottom:3.8rem;}
+.brand-certifi-con .certifi-tit .tit{display: inline-block; font-size:3rem; line-height:1.1; letter-spacing:-0.065em; color:#414141; font-weight:600; vertical-align:middle; }
+.brand-certifi-con .certifi-tit .num-box{display: inline-block; font-size:1.6rem; letter-spacing:-0.035em; line-height:1.9; color:#fff; background:#1b4965; -webkit-border-radius:15px;border-radius:15px; vertical-align:middle; padding:0 1.8rem; margin-left:1rem;}
+/* 품질인증서 */
+.brand-certifi-con .certifi-list-con{display: flex; justify-content:space-between;}
+.brand-certifi-con .certifi-list-con .list-item{width:calc(33.33% - 2.4rem); background:#f2f2f2; padding: 4.8rem 4rem 4rem 4.5rem; box-sizing:border-box;}
+.brand-certifi-con .certifi-list-con .list-item .tit{position: relative; font-size:2.6rem; letter-spacing:-0.025em; line-height:1.08; color:#333; padding-bottom:3.5rem; margin-bottom:3rem;}
+.brand-certifi-con .certifi-list-con .list-item .tit:before{position: absolute; content:''; width:3rem; height:0.2rem; background:#000; opacity:0.2; bottom:0;}
+.brand-certifi-con .certifi-list-con .list-item .txt{font-size:1.8rem; line-height:1.56; letter-spacing:-0.05em; color:#666;}
+.brand-certifi-con .certifi-list-con .list-item .date-txt{font-size:1.6rem; letter-spacing:-0.025em; line-height:1.75; font-weight:700; color:#333; text-align:right; margin-top:5rem;}
+/* 인증서 및 수상내역 테이블 */
+.certifi-table-box{width:calc(50% - 2rem);}
+.certifi-table-box.wide{width:100%}
+.certifi-table-box .certifi-table{width:100%; border-top:1px solid #000;}
+.certifi-table-box .certifi-table thead{background:#f7f7f7;}
+.certifi-table-box .certifi-table thead tr th{font-size:1.5rem; line-height:1.87; letter-spacing:-0.065em; color:#414141; font-weight:500;}
+.certifi-table-box .certifi-table thead tr, .certifi-table-box .certifi-table tbody tr{border-bottom:1px solid #e3e3e3; height:5.3rem; line-height:1.5;}
+.certifi-table-box .certifi-table tbody tr td{text-align:center; font-size:1.5rem; letter-spacing:-0.065em; color:#444; padding:0 0.3rem;}
+/* con04 */
+.brand-partner-wrap{}
+.brand-partner-item{display: flex; align-items: center; box-shadow: 3.1px 3.9px 16px 0 rgba(0, 0, 0, 0.05); padding:2rem 3.7rem; box-sizing:border-box; margin-bottom:2rem;}
+.brand-partner-item dt{position: relative; width:20%; padding:1.9rem 0;}
+.brand-partner-item dt .partner-tit{position: relative; font-size:2.2rem; line-height:1.5; letter-spacing:-0.065em; color:#232323; font-weight:700; padding-left:8.4rem;}
+.brand-partner-item dt:before{position: absolute; content:''; background:no-repeat center; top:0; left:0; width:5rem; height:100%;}
+.brand-partner-item.item01 dt:before{background-image:url('../images/content/brand_partner_icon01.png');}
+.brand-partner-item.item02 dt:before{background-image:url('../images/content/brand_partner_icon02.png');}
+.brand-partner-item.item03 dt:before{background-image:url('../images/content/brand_partner_icon03.png');}
+.brand-partner-item.item04 dt:before{background-image:url('../images/content/brand_partner_icon04.png');}
+.brand-partner-item.item05 dt:before{background-image:url('../images/content/brand_partner_icon05.png');}
+.brand-partner-item.item06 dt:before{background-image:url('../images/content/brand_partner_icon06.png');}
+.brand-partner-item.item07 dt:before{background-image:url('../images/content/brand_partner_icon07.png');}
+.brand-partner-item.item08 dt:before{background-image:url('../images/content/brand_partner_icon08.png');}
+.brand-partner-item.item09 dt:before{background-image:url('../images/content/brand_partner_icon09.png');}
+.brand-partner-item dd{width:80%;}
+.brand-partner-item dd span{display: inline-block; vertical-align:middle; margin:1rem 2.0rem;}
+
+/* ****************** 브랜드 소개 :: CI,BI ********************** */
+.ci-content-txt{font-size:1.8rem; letter-spacing:-0.075em; line-height:1.83; color:#666;}
+/* 로고이미지 */
+.brand-ci-content.con01{margin-bottom:19rem;}
+.brand-ci-con{border:1px solid #eee; box-sizing:border-box;}
+.brand-ci-con .img-box{padding:5%;}
+.brand-ci-con .img-box span{display: block; position: relative; width:100%; height:0; padding-top:23.89%;}
+.brand-ci-con .img-box span img{position: absolute; max-width:100%; max-height:100%; top:0; left:0; bottom:0; right:0; margin:auto;}
+.brand-ci-con .img-box span svg{position: absolute; max-width:100%; max-height:8.6rem; top:0; left:0; bottom:0; right:0; margin:auto;}
+.brand-ci-con .img-box span svg *{fill:var(--main-color)}
+.brand-ci-con .btn-box{display: flex; justify-content:center; background:#f7f7f7; padding:5.8rem 0; border-top:1px solid #eee;}
+.brand-ci-con .btn-box a{display: block; width:25rem; height:7rem; line-height:7rem; color:#232323; padding:0 2.9rem; background:#fff; margin:0 1rem; box-sizing:border-box; border:1px solid #000; transition:all 0.3s;}
+.brand-ci-con .btn-box a em{font-size:2rem; letter-spacing:-0.035em; font-weight:700; text-align:left; transition:all 0.3s;}
+.brand-ci-con .btn-box a i{font-size:2.4rem; float:right; line-height:7rem; transition:all 0.3s;}
+/* 전용색상 */
+.brand-ci-color-con{display: flex;}
+.ci-color-content{padding:5rem; box-sizing:border-box;}
+.ci-color-content .tit-box{}
+.ci-color-content .tit-box span img{max-width:100%;}
+.ci-color-content .tit-box span svg{height:2.6rem}
+.ci-color-content .tit-box span svg *{fill:var(--sub-color1)}
+.ci-color-content:nth-child(2) .tit-box span svg *{fill:var(--main-color)}
+.ci-color-content .tit-box .tit{font-size:3rem; line-height:2.33; letter-spacing:-0.05em; font-weight:400;}
+.ci-color-content .color-info .txt{font-size:1.6rem; letter-spacing:-0.05em; line-height:1.63;}
+.ci-color-content.con-01{width:50%;}
+.ci-color-content.con-01 .color-info{display: flex; margin-top:13.2rem;}
+.ci-color-content.con-01 .color-info .info-item{margin-right:4rem;}
+.ci-color-content.con-01 .color-info .info-item:last-child{margin-right:0;}
+.ci-color-content.con-02{width:25%;}
+.ci-color-content.con-02 .color-info{text-align:right;}
+.ci-color-content.con-02 .color-info .info-item{margin-bottom:1.4rem;}
+.ci-color-content.con-02 .color-info .info-item:last-child{margin-bottom:0;}
+.ci-color-content:nth-child(1){background: var(--main-color); color:#000;}
+.ci-color-content:nth-child(2){background: #1b4965; color:var(--main-color);}
+.ci-color-content:nth-child(3){background: #d9d8d6; color:#1b4965;}
+@media all and (min-width:801px){
+	/* 로고이미지 */
+	.brand-ci-con .btn-box a:hover{background:#222;}
+	.brand-ci-con .btn-box a:hover em, .brand-ci-con .btn-box a:hover i{color:#fff;}
+}
+
+/* ******************  CHAEVI :: 채비요금제 ********************** */
+#brandPriceContent{padding-bottom:16rem;}
+/* 배너 */
+.price-banner-wrap{background:no-repeat center; background-size:cover; background-image:url('../images/content/price_banner_bg.jpg'); text-align:center; padding:20.5rem 0 31.7rem;}
+.price-banner-wrap .price-sub-tit{display: block; font-size:2rem; line-height:1.65; letter-spacing:-0.025em; color:#fff; font-weight:600; margin-bottom:0.9em;}
+.price-banner-wrap .cm-content-tit{margin-bottom:0.71em; color:#fff;}
+.price-banner-wrap .price-txt{font-size:2rem; line-height:1.65; letter-spacing:-0.075em; color:rgba(255,255,255,0.5);}
+/* 컨텐츠박스 */
+.price-list-wrap{display: flex; justify-content:space-between; margin-top:-10.2em}
+.price-list-item{width:calc(33.33% - 2.6rem); padding:4.5rem; box-sizing:border-box; -webkit-border-radius:10px;border-radius:10px; box-shadow: 19.5px 24.1px 40px 0 rgba(0, 0, 0, 0.18);}
+.price-list-item .tit{position: relative; font-size:3.2rem; line-height:1.03; letter-spacing:-0.025em; font-weight:300; padding-bottom:1.42em; margin-bottom:1.42em;}
+.price-list-item .tit:before{position: absolute; content:''; width:100%; height:1px; bottom:0; left:0;}
+.price-list-item .tit:after{position: absolute; content:''; width:5rem; height:3px; bottom:0; left:0;}
+.price-list-item .inner-price{display: flex; flex-wrap:wrap; justify-content:space-between; border-bottom:1px solid; margin-bottom:3.5em; padding-bottom:3.5em;}
+.price-list-item .inner-price .chaevi-price{width:100%; margin-bottom:2.2rem;}
+.price-list-item .inner-price dl dt{font-size:1.8rem; letter-spacing:-0.065em; line-height:1.83;}
+.price-list-item .inner-price dl dd span{font-size:2.6rem; letter-spacing:-0.075em; /* line-height:2.69; */ font-weight:500;}
+.price-list-item .inner-price .chaevi-price dd b{font-size:5.5rem; letter-spacing:-0.06em; /* line-height:1.27; */}
+.price-list-item .inner-price .other-price{width:50%;}
+.price-list-item .inner-price .other-price dt{opacity:0.7;}
+.price-list-item .inner-price .other-price dd b{font-size:4rem; letter-spacing:-0.06em; /* line-height:1.75; */}
+.price-list-item .bottom-price{}
+.price-list-item .bottom-price .bottom-tit{font-size:2.2rem; letter-spacing:-0.065em; line-height:1.73;}
+.price-list-item .bottom-price .bottom-price-item{display: flex;}
+.price-list-item .bottom-price .bottom-price-item .sub-tit{width:35.71%; font-size:1.8rem; letter-spacing:-0.065em; line-height:1.89; font-weight:400;}
+.price-list-item .bottom-price .bottom-price-item .sub-tit i{margin-right:0.9rem;}
+.price-list-item .bottom-price .bottom-price-item .txt{font-size:1.8rem; letter-spacing:-0.065em; line-height:1.89;}
+/* 컨텐츠 박스별 색상 */
+.price-list-item:nth-child(1){background:#58ddd0; color:var(--sub-color1);}
+.price-list-item:nth-child(1) .tit:before{background:#1b4965; opacity:0.2;}
+.price-list-item:nth-child(1) .tit:after{background:#1b4965;}
+.price-list-item:nth-child(1) .inner-price{border-color:rgba(27,73,101,0.2)}
+.price-list-item:nth-child(2){background:var(--sub-color1); color:#fff;}
+.price-list-item:nth-child(2) .tit:before{background:#abaaaa; opacity:0.1;}
+.price-list-item:nth-child(2) .tit:after{background:#fff;}
+.price-list-item:nth-child(2) .inner-price{border-color:rgba(171,170,170,0.1)}
+.price-list-item:nth-child(3){background:#333; color:#fff;}
+.price-list-item:nth-child(3) .tit:before{background:#abaaaa; opacity:0.1;}
+.price-list-item:nth-child(3) .tit:after{background:#fff;}
+.price-list-item:nth-child(3) .inner-price{border-color:rgba(171,170,170,0.1)}
+/* 하단 텍스트 */
+.price-plus-txt-box{margin-top:6.3em;}
+.price-plus-txt-box .txt-box{display: flex; }
+.price-plus-txt-box .txt-box p{font-size:1.6rem; letter-spacing:-0.05em; line-height:1.63; color:rgba(85,85,85,0.7);}
+.price-plus-txt-box .txt-box .tit{ margin-right:3px;}
+/* 주의사항 */
+.price-caution-box{background:#f6f6f6; display: flex; align-items:center; padding:5.2rem 6rem; box-sizing:border-box; margin-top:10em;}
+.price-caution-box .caution-tit{font-size:2.6rem; letter-spacing:-0.065em; line-height:1.27; color:#232323;}
+.price-caution-box .caution-tit i{font-size:4rem; line-height:0.85; color:rgba(65,65,65,0.5); vertical-align:middle;}
+.price-caution-box .caution-tit span{vertical-align:middle; margin-left:0.6rem;}
+.price-caution-box .caution-list{position: relative; margin-left:9.1rem; padding-left:9.5rem;}
+.price-caution-box .caution-list:before{position: absolute; content:''; width:1px; height:100%; background:#000; opacity:0.1; left:0; top:0;}
+.price-caution-box .caution-list dl{display: flex;}
+.price-caution-box .caution-list dl dt{width:4rem; font-size:1.6rem; letter-spacing:-0.065em; line-height:2.06; color:#000; font-weight:700; font-style:italic;}
+.price-caution-box .caution-list dl dd{width:calc(100% - 4rem); font-size:1.6rem; letter-spacing:-0.065em; line-height:2.06; color:#333;}
+
+/* ******************  CHAEVI :: APP ********************** */
+/* -------- App :: 타이틀 -------- */
+.app-tit-box{text-align:center;}
+.app-tit-box .cm-content-tit{margin-bottom:3rem;}
+.app-tit-box p{color:#555; font-size:2rem; line-height:1.5; letter-spacing:-0.075em; margin-bottom:6.5rem;}
+.app-tit-box .app-downlod-btns .app-download-btn{display:inline-flex; justify-content:space-between; align-items:center; width:37rem; height:8rem; border:1px solid #222; background-color:#fff; box-sizing:border-box; padding:0 2rem 0 3rem; font-size:2rem; letter-spacing:-0.078em; color:#000; margin:0 1rem; transition:all 0.3s}
+.app-tit-box .app-downlod-btns .app-download-btn .txt{display:flex; align-items:center; }
+.app-tit-box .app-downlod-btns .app-download-btn .txt i{position:relative; font-size:1.3em; margin-right:0.5em}
+.app-tit-box .app-downlod-btns .app-download-btn:hover{background-color:#222; color:#fff;}
+/* -------- App :: Rolling -------- */
+.center-active-list-con{position:relative; max-width:35rem; margin:0 auto; padding:21rem 0;}
+.center-active-list-con:after{position:absolute; top:0; right:0; width:48rem; height:100%; content:""; background:url(../images/main/mobile_app_cover.png) no-repeat 0 50%; z-index:2; margin-right:-7rem; background-size:47rem auto;}
+.center-active-list-con .slick-list{overflow:visible;}
+.center-active-list-con .slick-track{display:flex; align-items:center; height:63.1rem; }
+.center-active-list-con .slide-item{display:flex !important; align-items:center; }
+.center-active-list-con .slide-inner-con{
+	width:23rem;
+	margin:0px auto;
+	transition:width 0.5s 0.5s;
+	transition-delay:0s;
+}
+.center-active-list-con .slide-inner-con .prd-thumb-box{display:block; overflow:hidden; transition:all 0.3s; border-radius:11px; box-shadow: -20.5px 21.9px 51px 0 rgba(0, 0, 0, 0.25); }
+.center-active-list-con .slide-inner-con .prd-thumb-box img{width:100%; }
+.center-active-list-con .slide-item.slick-center .slide-inner-con{
+	width:29rem;
+	/* transition-delay:0.5s; */
+}
+/* -------- App :: Logo -------- */
+.chaevi-app-logo-con{text-align:center; margin-bottom:10rem;}
+
+/* ****************** CHAEVI :: 채비존 ********************** */
+#brandZoneContent{padding-bottom:16rem;}
+/* 상단배너 (main.css 수정) */
+.sub-chaevizone-con.con01{position: relative; background:#000 url(../images/content/sub_chaevizone_bg.jpg) no-repeat 100% 0%; margin-bottom:17.8rem; background-size:cover;}
+.sub-chaevizone-con.con01:before{position: absolute; content:''; bottom:0; left:50%; transform:translateX(-50%); width:2px; height:6.4rem; background:#fff;}
+.sub-chaevizone-con.con01:after{position: absolute; content:''; bottom:0; left:50%; transform:translate(-50%, 100%); width:2px; height:6.4rem; background:#232323;}
+.sub-chaevizone-container{position:relative; height:100%; box-sizing:border-box; padding-top:21rem; padding-bottom:22.4rem;}
+.sub-chaevizone-container .chaevizone-spec-list-con{/* position:absolute; bottom:9.3rem; left:0; right:0; */ margin-top:7rem;}
+.chaevizone-sub-txt-box{font-size:3rem; line-height:1.67; letter-spacing:-0.075em; color:#fff; text-align:center; font-weight:500;}
+.chaevizone-sub-txt-box span{color:#58ddd0;} 
+/* benefit */
+.sub-chaevizone-con.con02{margin-bottom:19.1rem;}
+.cheavi-zone-benefit-list{display: flex; justify-content:space-between;}
+.zone-list-item{width:calc(33.33% - 2.7rem); -webkit-border-radius:10px;border-radius:10px; border:2px solid var(--sub-color1); box-shadow: 5.7px 7px 28.7px 0.3px rgba(0, 0, 0, 0.13); padding:5.1rem; box-sizing:Border-box; transition:all 0.3s;}
+.zone-list-item .tit{font-size:3.6rem; line-height:1.4; color:var(--sub-color1); font-weight:700; text-align:center; margin-bottom:2em; transition:all 0.3s;}
+.zone-list-item dl{display: flex; align-items:center; border-bottom:1px solid rgba(27,73,101,0.1); padding:0 1.2rem 2.5rem; margin-bottom:2.5rem;}
+.zone-list-item dl:last-child{padding-bottom:0; margin-bottom:0}
+.zone-list-item dl:last-child{border-bottom:0;}
+.zone-list-item dl dt{width:5rem; height:5rem;}
+.zone-list-item dl dt .icon{display: block; height:100%; }
+.zone-list-item dl dt .icon svg{width:100%; height:100%; transition:all 0.3s;}
+.zone-list-item dl dd{padding-left:5em; box-sizing:border-box;}
+.zone-list-item dl dd strong{font-size:2.2rem; line-height:1.4; color:var(--sub-color1); transition:all 0.3s;}
+.zone-list-item dl dd .txt{font-size:1.8rem; line-height:1.4; color:#839dad; transition:all 0.3s;}
+.zone-list-item.active{background:var(--sub-color1);}
+.zone-list-item.active .tit{color:#fff;}
+.zone-list-item.active dl{border-color:rgba(255,255,255,0.1);}
+.zone-list-item.active dl dd strong{color:#fff;}
+.zone-list-item.active dl dd .txt{color:rgba(255,255,255,0.5);}
+.zone-list-item.active dl dt .icon svg *{stroke:#fff;}
+/* 층별안내 */
+.sub-chaevizone-con.con03{margin-bottom:19.1rem;}
+.sub-chaevizone-con.con03{background:#f2f2f2; padding:3.5rem 0 5rem;}
+.chaevi-info-content{display: flex; flex-direction:row-reverse;}
+.zone-info-img-con{position: relative; width:61.07%;}
+.zone-info-img-con span img{max-width:100%;}
+#brandZoneContent .cm-example-txt{bottom:3rem; right:23rem;}
+.zone-info-txt-con{width:38.93%; padding-right:4.53%; box-sizing:border-box; margin-top:8.7rem;}
+.zone-info-txt-con .tit{font-size:5rem; line-height:1.4; letter-spacing:-0.02em; color:#232323; margin-bottom:3.3rem;}
+.floor-txt-list li{margin-bottom:1.1rem;}
+.floor-txt-list li .tit-box{position: relative; display: flex; align-items:center; background:#fff; -webkit-border-radius:8px;border-radius:8px; padding:3rem 4rem; cursor:pointer; transition:all 0.3s;}
+.floor-txt-list li .tit-box .floor{font-size:2.2rem; letter-spacing:-0.075em; color:#585858; font-weight:700; margin-right:5.2rem; transition:all 0.3s;}
+.floor-txt-list li .tit-box .info-tit{font-size:2.2rem; letter-spacing:-0.05em; color:#585858; font-weight:400; transition:all 0.3s;}
+.floor-txt-list li .tit-box i{position: absolute; top:50%; right:4rem; transform:translateY(-50%); font-size:2.6rem; color:rgba(88,88,88,0.6); transition:all 0.3s;}
+.floor-txt-list li .txt-box{display: none; padding:2rem 4rem 4rem; background:#fff; box-sizing:border-box; border-bottom-right-radius:8px; border-bottom-left-radius:8px; transition:background 0.3s;}
+.floor-txt-list li .txt-box dl{display: flex; font-size:1.6rem; line-height:2.25; letter-spacing:-0.075em;}
+.floor-txt-list li .txt-box dl dt{width:25%; color:#fff;}
+.floor-txt-list li .txt-box dl dd{color:rgba(255,255,255,0.5); width:75%;}
+.floor-txt-list li.open .tit-box{border-bottom-right-radius:0px; border-bottom-left-radius:0px; background:var(--sub-color1);}
+.floor-txt-list li.open .tit-box .floor, .floor-txt-list li.open .tit-box .info-tit{color:#fff;}
+.floor-txt-list li.open .tit-box i{color:rgba(255,255,255,0.6);}
+.floor-txt-list li.open .tit-box i:before{content:'\e945';}
+.floor-txt-list li.open .txt-box{background:var(--sub-color1);}
+/* 하단 배너 */
+.chaevizone-tit-box{text-align:center; margin-bottom:4.5rem;}
+.chaevizone-tit-box .tit{font-size:4.2rem; line-height:1.43; letter-spacing:-0.05em; color:#000; margin-bottom:2.8rem;}
+.chaevizone-tit-box .txt{font-size:1.8rem; line-height:1.83; letter-spacing:-0.075em; color:#000;}
+.sub-chaevizone-con.con04 .img-box img{width:100%;}
+
+/* ****************** CHAEVI :: 플랫폼운영 ********************** */
+#brandPlatformContent{margin:10rem 0;}
+.platform-video-con span{display: block; position: relative; width:100%; height:0; padding-top:56.26%; background:rgba(0,0,0,0.5);}
+.platform-video-con span:before{position: absolute; content:''; width:15.3rem; height:15.3rem; -webkit-border-radius:50%;border-radius:50%; background:var(--main-color); opacity:0.1; top:50%; left:50%; transform:translate(-50%,-50%);}
+.platform-video-con span:after{position: absolute; content:'\ea3e'; font-family:'xeicon'; font-size:3rem; line-height:12rem; text-align:center; color:var(--sub-color1); width:12rem; height:12rem; -webkit-border-radius:50%;border-radius:50%; background:var(--main-color); top:50%; left:50%; transform:translate(-50%,-50%);}
+
+/* ****************** CHAEVI :: 메가스테이션 ********************** */
+.station-tit-box .cm-content-txt{color:#000; font-weight:700; margin-bottom:2rem;}
+.station-tit-box .cm-content-tit{line-height:1.52;}
+.station-top-banner{position:relative;}
+.station-top-banner span{position: relative; display: block; width:100%; height:0; padding-top:51.05%;}
+.station-top-banner span img{position: absolute; top:0; left:0; width:100%; max-height:100%;}
+.station-top-banner .cm-example-txt{position:absolute; bottom:4rem; right:4rem; color:#fff;}
+.station-bottom-con{background:no-repeat right bottom; background-size:contain; background-image:url('../images/content/station_slide_bg.png');}
+.station-slide-wrap{position: relative; display: flex; align-items:center; }
+.station-slide-wrap .left-box{width:50%; padding-right:2rem; box-sizing:border-box; margin-bottom:20rem;}
+.station-slide-wrap .left-box .tit{font-size:4.8rem; letter-spacing:-0.05em; line-height:1.46; color:#000; margin-bottom:3.6rem;}
+.station-slide-wrap .left-box .tit span{color:var(--main-color);}
+.station-slide-wrap .left-box .txt01{font-size:2.3rem; letter-spacing:-0.075em; line-height:1.43; color:#333; font-weight:500; margin-bottom:3rem;}
+.station-slide-wrap .left-box .txt02{font-size:1.8rem; letter-spacing:-0.075em; line-height:1.83; color:#666;}
+.station-slide-wrap .right-box{position: relative; width:50%;}
+.station-slick-box{width:100%;}
+.station-product-img span{display: block; position: relative; width:100%; height:0; padding-top:130.67%;}
+.station-product-img span img{position: absolute; bottom:0; left:0; right:0; margin:auto; max-width:100%; max-height:100%; transition: all 0.5s cubic-bezier(0.25, 0.25, 0.75, 0.75); transform: translateX(20px); opacity:0;}
+.slick-active.station-product-img span img{transform: translateX(0); opacity:1;}
+.station-slick-box .slick-arrow{position: absolute; left:-100%; top:50%; transform:translateY(-50%); margin-top:20rem;}
+.station-slick-box .slick-arrow.slick-prev{}
+.station-slick-box .slick-arrow.slick-next{margin-left:100px;}
+.station-slide-wrap .right-box .cm-example-txt{bottom:2rem; left:50%; transform:translateX(-50%); margin-left:-16rem;}
+
+/* ========================================================
+ * 채비 인프라
+======================================================== */
+/* ******************  채비 인프라 :: 충전소 찾기 ********************** */
+#searchStationCon {position:relative; }
+/* -------- 충전소 찾기 :: 맵영역 -------- */
+#searchStationMapCon{position:relative; height:88rem; background-color:#ccc;}
+/* 맵영역 :: Overlay */
+.search-overlay-con{position:absolute; bottom:18px; left:33px; transform:translateY(calc(50% - 20px)); width: 47.4rem; padding: 2.9rem 3.6rem;  box-sizing:border-box; border:1px solid #000; border-radius: 5px; background-color: rgb(255, 255, 255); }
+.search-overlay-con:before{position:absolute; top:50%; left:0; width:13px; height:15px; transform:translate(-100%, -50%);background:url(../images/icon/map_overlay_arrow.png) no-repeat; content:"";}
+.search-overlay-con .overlay-close-btn{position:absolute; top:2.9rem; right:3rem; color:#000; font-size:2.4rem; }
+.search-overlay-con .overlay-tit{color:#000; font-size:2.4rem; letter-spacing:-0.075em; margin-bottom:3.8rem; padding-right:4rem; font-weight:500;}
+.search-overlay-con .overlay-map-info-item{display:flex; font-size:1.6rem; line-height:1.63; letter-spacing:-0.075em; margin-top:0.5em}
+.search-overlay-con .overlay-map-info-item dt{width:86px; color:rgba(0, 0, 0, 0.5);}
+.search-overlay-con .overlay-map-info-item dd{width:calc(100% - 86px); color:#000; white-space:normal;}
+.search-overlay-con .overlay-map-info-item dd .custom-radio-item input[type="radio"]:checked + label::before{color:var(--main-color)}
+/* google */
+.google-overlay-con{transform:none; position:relative; bottom:auto; left:auto; font-family:var(--font-family); border:0; padding:2rem}
+.google-overlay-con:before{display:none;}
+.google-overlay-con .overlay-close-btn{display:none;}
+.gm-ui-hover-effect{font-size:30px; margin:10px 15px 0 0 !important;}
+.gm-ui-hover-effect span{display:none !important; }
+.gm-ui-hover-effect:after{font-family:"xeicon"; content: "\e921"; font-size:2.4rem; color:#000;}
+/* -------- 충전소 찾기 :: 하단영역 -------- */
+#searchDetailBox{/* position:absolute; display:flex; bottom:0px; left:0px; right:0px; */ display:flex; position:relative; z-index:11;}
+.search-detail-box{width:33.333%; display:flex; align-items:center; height: 8rem; padding:0 3rem; box-sizing:border-box; background-color:#000;}
+.search-detail-box .search-detail-tit{color:#fff; font-size:2rem; font-weight:500; letter-spacing:-0.075em;}
+/* 충전소 찾기 */
+#inputSearch{background-color:var(--sub-color1); padding:0 3rem; }
+#inputSearch input{height:100%; width:calc(100% - 20rem); margin-left:3rem; border:0; background-color:transparent; font-size:1.6rem; letter-spacing:-0.075em; color:#fff;}
+#inputSearch input:focus{outline:none;}
+#inputSearch input::placeholder{opacity:0.7}
+#inputSearch .station-search-btn{margin-left:auto; font-size:2.4rem; color:#fff;}
+/* select 선택 */
+#areaSearch{background-color:var(--main-color);}
+#areaSearch .search-detail-select-drop-box{background-color:var(--main-color);}
+.search-detail-select-box{position:relative; }
+.search-detail-select-box .search-detail-tit{position:relative; display:flex; align-items:center; width:100%; height:100% }
+.search-detail-select-box .search-detail-tit:after{position:absolute; top:50%; right:0; font-family:"xeicon"; font-size:1.2em; content: "\e942"; margin-top:-0.5em}
+.search-detail-select-box.open .search-detail-tit:after{transform:rotate(-180deg)}
+.search-detail-select-drop-box{display:none; width:100%; position:absolute; bottom:100%; left:0; padding-top:15px; padding-bottom:15px; background-color:#000;}
+.search-detail-select-list{max-height:300px;}
+.search-detail-select-list li .area-item{display:flex; align-items:center; width:100%; padding:0 3rem; height:5rem; color:#fff; font-size:2rem; font-weight:500; letter-spacing:-0.075em; text-align:left; transition:all  0.3s}
+.search-detail-select-list li .area-item:hover,
+.search-detail-select-list li .area-item.selected{background-color:rgba(255,255,255,0.2)}
+.search-detail-select-box .mCSB_scrollTools{right:2rem;}
+.search-detail-select-box .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{width:8px; background-color:rgba(255,255,255,1)}
+.search-detail-select-box .mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.search-detail-select-box .mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: rgba(255,255,255,0.9); }
+
+/* ========================================================
+ * 채비 서비스
+======================================================== */
+/* ****************** 채비 서비스 :: 채비패스 ********************** */
+#serviceSubscribeContent{padding-bottom:16rem;}
+#serviceSubscribeContent .price-banner-wrap{background-image:url('../images/content/subscribe_banner_bg.jpg'); padding:20.5rem 0 25.3rem;}
+#serviceSubscribeContent .price-banner-wrap .cm-content-tit{display: block; line-height:1.52; margin-bottom:2rem;}
+#serviceSubscribeContent .price-banner-wrap .price-sub-tit{margin-bottom:0;}
+#serviceSubscribeContent .price-banner-wrap .price-sub-tit span{font-size:1.5rem;  font-weight:300;  display:block;}
+
+
+.subscribe-item .subscribe-tit{font-size:3.6rem; line-height:0.92; letter-spacing:-0.065em; text-align:center; margin-bottom:0.8rem;}
+.subscribe-item .subscribe-sub-tit{font-size:1.8rem; line-height:1.83; letter-spacing:-0.025em; text-align:center; margin-bottom:3rem;}
+#serviceSubscribeContent .price-list-wrap{padding:0 4rem; box-sizing:border-box;}
+.price-list-item.subscribe-item{width:calc(33.33% - 2.3rem);}
+.subscribe-item .subscribe-table{border-top:1px solid; border-bottom:1px solid; width:100%; box-sizing:border-box;}
+.subscribe-item .subscribe-table thead th,
+.subscribe-item .subscribe-table tbody th,
+.subscribe-item .subscribe-table tbody td{font-size:1.5rem; line-height:1.5; letter-spacing:-0.025em; font-weight:700; text-align:center; padding:1.2rem 0.5rem; word-break: keep-all;}
+.subscribe-item .subscribe-table thead{border-bottom:1px solid; box-sizing:border-box;}
+.subscribe-item .subscribe-table thead tr th:first-child{border-right:1px solid; box-sizing:border-box;}
+.subscribe-item .subscribe-table tbody tr th{border-right:1px solid; box-sizing:border-box; vertical-align:top;}
+.subscribe-item .subscribe-table tbody tr:first-child *{padding-top:2rem;}
+.subscribe-item .subscribe-table tbody tr:last-child p:last-child{padding-bottom:2rem;}
+.subscribe-item .subscribe-table tbody tr td p{margin-bottom:1rem;}
+.subscribe-item .subscribe-table tbody tr td p:last-child{margin-bottom:0;}
+.subscribe-item .bottom-txt-box{font-size:1.6rem; letter-spacing:-0.05em; line-height:1.63; text-align:center; margin-top:3rem;}
+.subscribe-plus-txt-box{font-size:1.6rem; line-height:1.63; letter-spacing:-0.065em; color:rgba(51,51,51,0.6); text-align:center; margin-top:5.5rem;}
+.subscribe-plus-txt-box .txt{margin-bottom:0.5rem;}
+.subscribe-plus-txt-box .txt:last-child{margin-bottom:0;}
+.item-01.subscribe-item .subscribe-table thead th,
+.item-01.subscribe-item .subscribe-table tbody th,
+.item-01.subscribe-item .subscribe-table tbody td{color:var(--sub-color1);}
+.item-01.subscribe-item .subscribe-table,
+.item-01.subscribe-item .subscribe-table thead,
+.item-01.subscribe-item .subscribe-table thead tr th:first-child,
+.item-01.subscribe-item .subscribe-table tbody tr th{border-color:var(--sub-color1);}
+.item-01.subscribe-item .subscribe-table tbody tr:last-child p:last-child{padding-bottom:2.4rem;}
+.item-02.subscribe-item .subscribe-table thead th,
+.item-02.subscribe-item .subscribe-table tbody th,
+.item-02.subscribe-item .subscribe-table tbody td{color:#fff;}
+.item-02.subscribe-item .subscribe-table,
+.item-02.subscribe-item .subscribe-table thead,
+.item-02.subscribe-item .subscribe-table thead tr th:first-child,
+.item-02.subscribe-item .subscribe-table tbody tr th{border-color:rgba(255,255,255,0.1);}
+.item-03.subscribe-item .subscribe-table thead th,
+.item-03.subscribe-item .subscribe-table tbody th,
+.item-03.subscribe-item .subscribe-table tbody td{color:#fff;}
+.item-03.subscribe-item .subscribe-table,
+.item-03.subscribe-item .subscribe-table thead,
+.item-03.subscribe-item .subscribe-table thead tr th:first-child,
+.item-03.subscribe-item .subscribe-table tbody tr th{border-color:rgba(255,255,255,0.1);}
+.subscribe-benefit-con{margin-top:6rem;}
+.subscribe-benefit-list{justify-content:center;}
+.subscribe-benefit-list .subscribe-item{display: flex; flex-wrap:wrap; align-items:center; width:28.5rem; text-align:center; background:#fff; box-shadow: 6.3px 7.8px 21px 0 rgba(0, 0, 0, 0.1); margin:0 2.1rem; padding:14rem 1rem 13rem; box-sizing:border-box; transition:all 0.3s;}
+.subscribe-benefit-list .subscribe-item .icon{display: block; width:6.2rem; margin:0 auto 4.8rem;}
+.subscribe-benefit-list .subscribe-item dl{width:100%;}
+.subscribe-benefit-list .subscribe-item dl dt{font-size:2.2rem; line-height:1.5; letter-spacing:-0.065em; color:rgba(65,65,65,0.3); font-weight:700; font-style:italic;  transition:all 0.3s;}
+.subscribe-benefit-list .subscribe-item dl dd{font-size:2rem; line-height:1.65; letter-spacing:-0.065em; color:#232323;  transition:all 0.3s;}
+.subscribe-benefit-list .subscribe-item.active{background:var(--sub-color1);}
+.subscribe-benefit-list .subscribe-item.active .icon svg *{stroke:var(--main-color);}
+.subscribe-benefit-list .subscribe-item.active dl dt{color:var(--main-color);}
+.subscribe-benefit-list .subscribe-item.active dl dd{color:var(--main-color);}
+/* 스타벅스 기프티콘 이벤트 통이미지 */
+.subscribe-img-wrap img{width:100%;}
+
+/* ******************  채비서비스 :: 채비 홈충전기 ********************** */
+/* -------- 홈충전기 신청 폼 -------- */
+#chargerTopCon{background-color:#f4f4f4}
+.charger-top-prd-container{display:flex; align-items:center; }
+.charger-photo-thumb{width:50%;}
+.charger-info-con{width:50%; box-sizing:border-box; padding-left:7rem}
+.charger-info-con .charger-tit-con .model-name{display:block; font-size:2rem; letter-spacing:-0.025em; margin-bottom:1em; color:var(--sub-color1);}
+.charger-info-con .charger-tit-con .name{display:block; font-size:5rem; color:#232323; font-weight:700; letter-spacing:-0.05em; margin-bottom:3.2rem}
+.charger-info-con .charger-txt-con{font-size:2rem; color:#8b8b8b; font-weight:400; letter-spacing:-0.075em; line-height:1.65; margin-bottom:6.5rem}
+.charger-info-con .charger-apply-btns{display:flex; align-items:center; margin:0 -0.5rem} 
+.charger-info-con .charger-apply-btn{margin:0 0.5rem} 
+#chargerApplyCon{padding:18.6rem var(--area-padding) 25rem}
+
+/* -------- 홈충전기 :: 자부담서류 팝업 -------- */
+.document-download-con{padding:2rem 0; border-top:1px solid #333; border-bottom:1px solid #ddd;}
+.document-download-con ul{display:flex; justify-content:space-between; }
+.document-download-con ul li{width:calc(33.33% - 10px); }
+.document-download-con ul li a{display:block; border:1px solid #000; padding:2rem 0; text-align:center; font-size:1.6rem; letter-spacing:-0.075em; color:#000; transition:all 0.3s}	
+.document-download-con ul li a i{font-size:1.25em; }
+.document-download-con ul li a:hover{color:#fff; background-color:var(--sub-color1); border-color:var(--sub-color1)}
+.document-download-con ul li a .document-tit{display:block; font-weight:400; margin-top:1.4rem; line-height:1.2;}
+
+
+/* ========================================================
+ * 랜드오너 파트너쉽
+======================================================== */
+/* -------- 충전소 설치 안내/신청 :: Before After-------- */
+.before-after-container{margin-bottom:23rem;}
+.before-after-category{color:#000; font-size:2rem; letter-spacing:-0.025em; font-weight:700; text-align:center; margin-bottom:3.6rem;}
+.before-after-m-con{display:none;}
+.before-after-caution-txt{margin-top:3rem; text-align:center; font-size:1.6rem; letter-spacing:-0.065em; color:#555;}
+@media all and ( min-width: 801px ){
+.cd-image-container {
+	position: relative;
+	height: 0;
+	padding-top:calc(47.44%);
+	margin: 15rem auto 0px;
+}
+.cd-image-container .right-img-con{
+	position:absolute;
+	top:0rem;
+	left:0;
+	width:100%;
+	height:100%;
+	background-size:cover !important;
+}
+.cd-image-container img {
+	display: block;
+}
+.cd-image-label {
+  position: absolute;
+  top: -9rem;
+  left:0; 
+  right: 0;
+  font-size:2.6rem;
+  letter-spacing:-0.075em;
+  font-weight:600;
+  color: #ffffff;
+  background-color:#000;
+  display:flex;
+  align-items:center;
+  justify-content:center; 
+  white-space:nowrap;
+  height:9rem;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0;
+  transform: translateY(-20px);
+  -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  -moz-transition: -moz-transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+}
+.cd-image-label.after-label{
+	background-color:var(--main-color);
+	left:50%;
+}
+.cd-image-label.is-hidden {
+	/* visibility: hidden; */
+}
+.is-visible .cd-image-label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cd-resize-img {
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  width: 0;
+  height: 100%;
+  padding-top:0;
+  background: url("../images/content/charging_station_install_img_befor.png") no-repeat left top;
+  background-size: auto 100%;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.is-visible .cd-resize-img {
+	width: 50%;
+	animation: cd-bounce-in 0.7s;
+}
+
+@keyframes cd-bounce-in {
+	0% {
+		width: 0;
+	}
+	60% {
+		width: 55%;
+	}
+	100% {
+		width: 50%;
+	}
+}
+.cd-handle {
+	position: absolute;
+	height: 9.8rem;
+	width: 9.8rem;
+	left: 50%;
+	top: 50%;
+	margin-left: -4.9rem;
+	border-radius: 50%;
+	background: var(--main-color);
+	cursor: move;
+	box-shadow: 2px 0 12.9px 0.1px rgba(0, 0, 0, 0.45);
+	opacity: 0;
+	transform: translate3d(0, 0, 0) scale(0);
+}
+.cd-handle.draggable {
+	background-color: var(--sub-color1);
+}
+.is-visible .cd-handle {
+	opacity: 1;
+	transform: translate3d(0, 0, 0) scale(1);
+	transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+}
+.cd-handle .icons{
+	display:flex;
+	width:100%;
+	height:100%;
+	align-items:center; 
+	color:#fff;
+	font-size:2rem;
+	justify-content:space-evenly; 
+}
+.cd-handle .txt{
+	position:absolute; 
+	top:50%; 
+	margin-top:-1.2rem;
+	font-weight:700;
+	font-size:2.4rem;
+	color:#fff;
+}
+.cd-handle .txt.before-txt{right:100%; margin-right:10px}
+.cd-handle .txt.after-txt{color:var(--main-color); left:100%; margin-left:10px}
+}
+
+/* -------- 충전소 설치 안내/신청 :: 충전소 혜택 -------- */
+.charging-station-benefit-con{text-align:center;}	
+.charging-station-benefit-list{position:relative; display:flex; align-items:center; height:41.8rem; background:url(../images/content/charging_station_benefit_bg.jpg) no-repeat 50% 50%;}
+.charging-station-benefit-list:before{position:absolute; left:50%; top:11rem; bottom:11rem; width:1px; content:""; background-color:#fff; opacity:0.3}
+.charging-station-benefit-list .benefit-item{width:50%; text-align:center; color:#fff; font-size:2rem;}
+.charging-station-benefit-list .benefit-item .icon{display:inline-block; margin-bottom:4rem; }
+.charging-station-benefit-list .benefit-item dt{margin-bottom:3rem; font-size:1.5em; font-weight:600; letter-spacing:-0.075em;}
+.charging-station-benefit-list .benefit-item dd{height:3.3em; font-weight:300; letter-spacing:-0.065em; opacity:0.8; line-height:1.65;}
+.charging-station-benefit-txt{line-height:1.5; color:#555; font-size:1.8rem; letter-spacing:-0.065em; margin:7.5rem 0;}
+
+/* 설문조사 신청폼 */
+.survey-select-con{display:flex; flex-wrap:wrap; align-items:center; margin:-0.5rem}
+.survey-select-con .survey-select-item{width:calc(25% - 1rem); margin:0.5rem}
+.survey-select-con .survey-select-item label{display:flex; justify-content:center; height:3.8rem; padding:0 0.5rem; align-items:center; border:1px solid #f2f2f2; color:#919191; background-color:#f2f2f2; font-size:1.4rem; letter-spacing:-0.065em;}
+.survey-select-con .survey-select-item input{position:absolute; left:-99999em;}
+.survey-select-con .survey-select-item input:checked + label{background-color:var(--main-color); border-color:var(--main-color); color:#fff; font-weight:500;}
+.card-img-con{margin-top:2.7rem; display:none;}
+.survey-select-con .survey-select-item.col2{width:calc(50% - 1rem);}
+.survey-select-con .survey-select-item.col3{width:calc(75% - 1rem);}
+.survey-select-con.col5 .survey-select-item{width:calc(20% - 1rem)}
+
+/* ******************  충전소 설치 안내/신청 확인 ********************** */
+.charging-station-modify-wrapper{margin-bottom:7.5rem}
+.charging-station-modify-wrapper .cm-content-sub-tit{color:#000; font-size:2.6rem; letter-spacing:-0.075em; margin-bottom:0.8em;}
+.file-upload-con{width:100%; margin-bottom:5px}
+.file-upload-con .file-uploaded-box{display:flex; align-items:center; min-height:3.5rem; }
+.file-upload-con .file-uploaded-box a{color:#222; font-size:1.5rem; text-decoration:underline; }
+.file-upload-con .file-uploaded-box .file-delete-btn{margin-left:1rem}
+@media all and (min-width:801px){
+	.charging-station-modify-wrapper .survey-select-con .survey-select-item{width:auto;}
+	.charging-station-modify-wrapper .survey-select-con .survey-select-item label{padding:0 3rem}
+	.charging-station-modify-wrapper .survey-select-con .survey-select-item.width-long{width:calc(50% - 1rem); max-width:30rem;}
+}
+
+/* ========================================================
+ * 고객지원
+======================================================== */
+/* ******************  게시판 공통 ********************** */
+/* #boardContent{padding:17.5rem 0}
+@media all and (max-width:1536px){
+	#boardContent{padding:10rem var(--area-padding); }
+} */
+/* ******************  고객지원 :: 뉴스 ********************** */
+.news-list-con{margin:0 -1.35rem}
+.news-list-con .news-item{float:left; width:calc(25% - 2.7rem); margin:0 1.35rem 2.7rem; font-size:1.6rem} 
+.news-item .news-item-inner,
+.news-item .news-item-inner *{transition:all 0.3s}
+.news-item .news-item-inner{display:block; position:relative; height:28.75em; padding:2.5em; box-sizing:border-box; }
+.news-item .news-item-inner:before{position:absolute; top:0px; left:0px; right:0px; bottom:0px; border:0.4375em solid #ebebeb; content:""; transition:all 0.1s ease;}
+.news-item .news-item-inner .news-tit{position:relative; height:3.28em; font-size:1.375em; letter-spacing:-0.05rem; font-weight:600; line-height:1.64; color:#333; margin-bottom:2rem; padding-right:2.5rem}
+.news-item .news-item-inner .news-tit .news-new-icon{position:absolute; bottom:-0.1em; right:0rem; font-size:1em; color:var(--main-color);}
+.news-item .news-item-inner .news-sub-txt{height:4.89em; font-size:1em; letter-spacing:-0.05rem; line-height:1.63; color:#848484; }
+.news-item .news-item-inner .news-date{position:absolute; font-size:0.84375em; bottom:3.125em; left:2.6875em; font-size:1.5rem; font-weight:400; color:#333; opacity:0.7 }
+.news-item .news-item-inner .news-more-btn:before{position:absolute; left:4.3rem; top:50%; width:1.3rem; height:0.2rem; margin-top:-1px; content:""; background-color:#111; }
+.news-item .news-item-inner{padding-bottom:0;}
+.news-item .news-thumb{position:relative; height:0; padding-top:62.93%; margin-bottom:2.3rem }
+.news-item .news-thumb img{object-fit:cover;}
+@media all and ( min-width: 801px){
+	.news-item .news-item-inner:hover{background-color:#fff !important; box-shadow: 7.8px 7.8px 26.7px 0.3px rgba(0, 0, 0, 0.16);}
+	.news-item .news-item-inner:hover:before{border:1px solid #cfcfcf}
+	.news-item .news-item-inner:hover .news-tit,
+	.news-item .news-item-inner:hover .news-sub-txt,
+	.news-item .news-item-inner:hover .news-date{color:var(--sub-color1);}
+}
+
+/* ******************  고객지원 :: 채용 ********************** */
+.recruit-board-container .recruit-part-name{font-size:1.1875em; font-weight:600; color:#051315; letter-spacing:-0.25px; font-family:var(--font-family2);}
+.recruit-board-container .bbs-title .recruit-part-name{display:none;}
+.recruit-board-container .bbs-subject-con{display:inline-flex;}
+.recruit-board-container .bbs-subject-con .bbs-subject-txt{line-height:1}
+.recruit-board-container .bbs-recruit-date i{position:relative; top:1px; margin-right:0.7em}
+
+/* ========================================================
+ * MEMBER
+======================================================== */
+/* ******************  회원가입 :: 선택 ********************** */
+.join-select-list{display:flex; justify-content:space-between; margin:0 -3rem; }
+.join-select-list > li{width:calc(33.33% - 6rem); margin:0 3rem; }
+.join-select-list > li .member-join-inner{position:relative; display:block; height:24.3rem; border:9px solid #f1f1f1; text-align:center; padding-top:5rem; color:var(--sub-color1); transition:all 0.3s; box-sizing:border-box; }
+.join-select-list > li .member-join-inner:before{position:absolute; top:-9px; left:-9px; right:-9px; bottom:-9px; content:""; background-color:var(--sub-color1); content:""; transition:all 0.3s; opacity:0;}
+.join-select-list > li .member-join-inner:after{position:absolute; bottom:4.8rem; left:50%; transform:translateX(-50%); font-family:"xeicon"; font-size:2.4rem; content: "\e90b";}
+.join-select-list > li .member-join-inner .member-join-select-tit{position:relative; font-size:2.4rem; letter-spacing:-0.65px; font-weight:500; z-index:1;}
+.join-select-list > li .member-join-inner .member-join-select-tit span{display:block; font-size:0.75em; font-weight:700; opacity:0.3; margin-bottom:15px;}
+@media all and (hover:hover){
+	.join-select-list > li .member-join-inner:hover{color:#fff;}
+	.join-select-list > li .member-join-inner:hover:before{opacity:1;}
+}
+
+/* ******************  회원가입 :: 주의문구 ********************** */
+.join-cuation-box{background-color:#f6f6f6; padding:3.7em 3.3em; font-size:1.4rem;}
+.join-cuation-box dl{display:flex; align-items:center; }
+.join-cuation-box dl dt{position:relative;width:24rem; font-size:1.357em; line-height:1.57}		
+.join-cuation-box dl dt:after{position:absolute; right:0px; top:0px; bottom:0px; width:1px; content:""; background-color:#bcbcbc;}			
+.join-cuation-box dl dd{width:calc(100% - 24rem); line-height:2.28; letter-spacing:-0.046em; box-sizing:border-box; padding-left:8.5rem}
+
+/* ========================================================
+ * MYPAGE
+======================================================== */
+.member-out-txt{text-align:right; color:#777; font-size:1.3rem; margin-top:1rem}
+
+/* ******************  MYPAGE :: 간편결제 등록 ********************** */
+.business-num-check{color:#666; padding-left:20px; }
+.business-num-check i{position:relative; top:1px; margin-right:0.1em}
+.business-num-check input{position:absolute; left:-9999em}
+.business-num-check input:checked + label{font-weight:600;}
+.business-num-check input:checked + label i{color:#000}
+.simple-pay-caution{margin-top:12px;}
+.simple-pay-caution p{color:#666; font-size:1.4rem; letter-spacing:-0.065em; line-height:1.2;}
+.simple-pay-agree-con{position:relative; display:flex; justify-content:space-between; margin:2rem 0;}
+.simple-pay-agree-con .pay-agree-item{width:calc(50% - 1.4rem); height:4.2rem; display:flex; align-items:center; justify-content:space-between; background-color:#f2f2f2; padding:1.2rem 2rem; box-sizing:border-box; transition:all 0.4s }
+.simple-pay-agree-con.col-1 .pay-agree-item{width:100%;}
+.simple-pay-agree-con .pay-agree-item label{display:flex; align-items:center;  font-size:1.4rem; letter-spacing:-0.065em; font-weight:300;}
+.simple-pay-agree-con .pay-agree-item label i{margin-right:0.2em}
+.simple-pay-agree-con .pay-agree-item input{position:absolute; left:-9999em;}
+.simple-pay-agree-con .pay-agree-item input:checked + label{font-weight:600;}
+.simple-pay-agree-con .pay-agree-item input:checked + label i{color:#000;}
+.simple-pay-agree-con .pay-agree-item .agree-view-btn{display:flex; align-items:center;  height:18px; font-size:1.1rem; letter-spacing:-0.065em; border:1px solid #b3b3b3; padding:0 8px}
+.pay-agree-privacy-box{display:none; position:absolute; top:5rem; left:0; height:15rem; width:100%; background-color:#f2f2f2; box-sizing:border-box; padding:1.5rem }
+.pay-agree-privacy-box .pay-agree-inner{height:100%; overflow-y:scroll; }
+@media all and (min-width:801px){
+	.simple-pay-agree-con .pay-agree-item.open{margin-bottom:17rem}
+}
+/* ******************  MYPAGE :: 회원카드 ********************** */
+.member-card-container{margin-top:20rem;}
+.member-card-container:first-child{margin-top:0;}
+.member-card-container .cm-content-tit{margin-bottom:6rem}
+.card-list-tbl .bbs-list-head{display:table-header-group;}
+.card-list-tbl .bbs-list-head .bbs-head-item{ background-color:#f2f2f2; height:7.5rem; }
+.card-list-tbl .card-name{color:inherit; font-weight:400;}
+.card-list-tbl .card-number{color:#051315; font-weight:400;}
+/* 신청취소버튼 */
+.card-list-tbl .card-cancel{background:#f01a1a; color:#fff; padding:1rem; font-size:1.3rem;}
+
+/* ******************  MYPAGE :: 카드등록 ********************** */
+.custom-radio-item-box2{display:flex; flex-wrap:wrap; align-items:center; margin:-0.5rem}
+.custom-radio-item-box2 .custom-radio-item2{margin:0.5rem}
+.custom-radio-item-box2 .custom-radio-item2 label{display:flex; justify-content:center; min-width:6.8rem; height:3.8rem; padding:0 0.5rem; align-items:center; border:1px solid var(--sub-color1); color:#666; font-size:1.4rem; letter-spacing:-0.065em;}
+.custom-radio-item-box2 .custom-radio-item2 input{position:absolute; left:-99999em;}
+.custom-radio-item-box2 .custom-radio-item2 input:checked + label{background-color:var(--sub-color1); color:#fff; font-weight:500;}
+.card-img-con{margin-top:2.7rem; display:none;}
+.card-img-con img{margin-right:2rem;}
+.join-form-tbl td .card-img-con + .join-sub-txt2{color:#919191; margin-top:15px;}
+.join-form-tbl td .card-img-con + .join-sub-txt2 i{position:relative; top:1px; margin-right:0.2em}
+
+
+/* ******************  MYPAGE :: 포인트전환 ********************** */
+.point-caution-txt{margin-top:2rem;}
+.point-caution-txt p{position:relative; color:#919191; font-size:1.4rem; letter-spacing:-0.065em; line-height:1.4; padding-left:2.7rem; margin-bottom:1rem}
+.point-caution-txt p:last-child{margin-bottom:0;}
+.point-caution-txt p:before{font-family:"xeicon"; position:absolute; top:0px; left:0px; content: "\e928";}

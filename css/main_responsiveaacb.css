@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : main_responsive.css
+ * description : 메인 레이아웃 및 컨텐츠 반응형 CSS
+ * date : 2022-06-03
+******************************************************** */
+
+@media all and ( max-width: 1280px ){
+	/* 공통 :: 레이아웃 */
+	#fullpage .section{height:auto !important;}
+	#fullpage .fp-section .fp-tableCell{height:auto !important;}
+}
+/* ******************  메인 비주얼 ********************** */
+@media all and ( max-width: 1280px ){
+	#fullpage #mainVisual{height:100vh !important;;}
+	.main-visual-txt-box .main-visual-txt img{max-width:100%}
+}
+@media all and ( max-width: 800px ){
+	/* 메인 비주얼 :: 이미지 */
+	.main-visual-item .main-visual-pc-img{display:none;}
+	.main-visual-item .main-visual-m-img{display:block;}
+	/* 메인 비주얼 :: 텍스트 */
+	.main-visual-txt-con{top:0;}
+	.main-visual-txt-con .main-visual-txt-box{display:flex; align-items:center; flex-direction:column-reverse; justify-content:center;  height:100%; padding-bottom:0;}
+	.main-visual-txt-inner{text-align:center; margin-bottom:3.2rem; transition:all 0.3s; opacity:0; transform:translateY(-5rem)}
+	.main-visual-txt-box .main-visual-txt .hidden-item {opacity:1; transform:none; }
+	.main-visual-txt-box .main-visual-txt{font-size:4rem;}
+	.main-visual-txt-box .main-visual-txt img{max-width:70%}
+
+	.active .main-visual-txt-inner {opacity:1; transform:translateY(0)}
+
+	/* 메인 비주얼 :: controls */
+	.visual-controls{display:block; text-align:center;}
+	.visual-controls .visual-line-box{display:none;}
+	.visual-controls .play-controls-btn{margin-left:0; margin-top:1.6rem; font-size:3rem;}
+	.main-scroll-icon{display:block;}
+
+}
+
+/* ******************  메인 컨텐츠 :: 공통 ********************** */
+@media all and ( max-width: 800px ){
+	/* 공통 :: 타이틀 */
+	.main-tit-box{margin-bottom:8.4rem;}
+	.main-section-cate{font-size:1.6rem;}
+	.main-big-tit{font-size:5.4rem;}
+	.main-sm-tit{font-size:4.2rem}
+	.main-sub-txt2{margin-top:2rem}
+	.main-sub-txt2 + .main-detail-btn{margin-top:5rem}
+	/* 공통 :: 버튼 */
+	.main-detail-btn{margin-top:7rem}
+	.main-detail-btn .txt{display:none;}
+	.main-detail-btn .icon{margin-left:0;}
+}
+	
+/* ******************  MAIN :: APP ********************** */
+@media all and ( max-width: 1280px ){
+	.main-app-container{height:60rem; padding:10rem 0;}
+	.main-app-container .main-tit-box{width:38rem;}
+	.main-app-gallery-wrapper {margin-right:-9rem}
+	.main-app-rolling-con{transform:scale(0.8);}
+}
+@media all and ( max-width: 800px ){
+	#mainAppCon{height:auto !important; padding-bottom:0; background:url(../images/main/main_app_bg_m.jpg) no-repeat 0 100%;  background-size:100% auto}
+	#mainAppCon .main-app-bg{display:none;}
+	.main-app-container{display:block; padding:0; padding-top:10rem; height:auto; }
+	.main-app-container .main-tit-box{width:auto;}
+	.main-app-gallery-wrapper{position:relative; margin-right:0; left:15%; right:15%; display:none;}
+	.main-app-gallery-wrapper:after{display:none;}
+	.main-app-gallery-container{overflow:visible;}
+	.main-app-gallery-container .main-app-gallery-con .main-app-item{height:auto;}
+	.main-app-gallery-wrapper-m{position:relative; display:block; width:42.26vw; margin:0px auto; margin-top:-5rem; padding:5rem 0;}
+	.main-app-gallery-wrapper-m:after{position:absolute; top:0; left:50%; width:68vw; height:100%; content:""; background:url(../images/main/mobile_app_cover.png) no-repeat 0 50%; z-index:2; margin-left:-34vw; background-size:68vw auto;}
+	.main-app-gallery-wrapper-m .swiper-container{overflow:visible;}
+	.main-app-gallery-wrapper-m .app-item-thumb{display:block; transform:scale(0.8); transition:transform 0.3s;}
+	.main-app-gallery-wrapper-m .app-item-thumb img{width:100%; border-radius:10px}
+	.main-app-gallery-wrapper-m .swiper-slide-active .app-item-thumb{transform:scale(1)}
+	.main-app-rolling-con{transform:none; position:static; margin:0 calc(-1 * var(--area-padding));}
+	.main-app-rolling-con:after{width:28rem; background-size:27.7rem auto; right:50%; margin-right:0; margin-top:19rem; transform:translateX(50%);}
+	.main-app-rolling-swiper .app-slide{width:17rem; height:36.5rem; padding-bottom:8rem}
+}
+
+/* ******************  MAIN :: CHARGE ********************** */
+@media all and ( max-width: 1280px ){
+	#mainChargeCon{padding:10rem 0;}
+	#mainChargeCon .main-charge-bg{display:none;}
+	.charge-compre-item{width:30rem;}
+	.charge-compre-item .charege-compare-tit b{font-size:4.4rem;}
+}
+@media all and ( max-width: 800px ){
+	#mainChargeCon{background:url(../images/main/main_charge_bg_m.jpg) no-repeat 0 0; background-size:100% auto}
+	.main-charge-container{display:block;}
+	.charge-compre-item{width:50vw;}
+}
+@media all and ( max-width: 640px ){
+	.charge-compare-con{display:block;}
+	.charge-compre-item{width:auto; margin:0;}
+}
+
+/* ******************  MAIN :: CHAEVI Zone ********************** */
+@media all and ( max-width: 1560px ){
+	.main-chaevizone-container .chaevizone-spec-list-con{left:var(--area-padding); right:var(--area-padding)}
+}
+@media all and ( max-width: 1280px ){
+	#mainChaevizoneCon{padding:10rem 0; background-position:80% 20%;}
+	.main-chaevizone-container{padding-top:0;}
+	.main-chaevizone-container .main-tit img{height:2.6rem;}
+	.main-chaevizone-container .chaevizone-spec-list-con{position:static; margin-top:40rem}
+}
+@media all and ( max-width: 800px ){
+	#mainChaevizoneCon{overflow:hidden; background:#000;}
+	#mainChaevizoneCon .cm-section-bg{display:none;}
+	.main-chaevizone-container .main-tit-box{position:relative; margin-bottom:0;}
+	.main-chaevizone-container .main-tit{margin-bottom:2.5rem}
+	.main-chaevizone-container .chaevizone-m-img-con{display:block; margin:-80vw calc(var(--area-padding) * -1) 0}	
+	.main-chaevizone-container .chaevizone-m-img-con img{width:100%;}
+	.main-chaevizone-container .chaevizone-spec-list-con{margin-top:0}
+	.chaevizone-spec-list-con ul{flex-wrap:wrap; margin:0 -1.2rem;}
+	.chaevizone-spec-list-con ul li{width:calc(50% - 2.4rem); margin:0 1.2rem 2rem; font-size:1.8rem; background:url(../images/main/chaevizone_spec_list_bg.jpg) no-repeat 100% 0; background-size:cover;}
+	.chaevizone-spec-list-con ul li:not(.first-item){height:10rem; }
+	.chaevizone-spec-list-con ul li.first-item{width:100%; margin-bottom:5.7rem}
+	.chaevizone-spec-list-con ul li:before, .chaevizone-spec-list-con ul li:after{left:50%; top:100%; margin-top:2rem; margin-left:-3px;}
+	.chaevizone-spec-list-con ul li:not(.first-item):before, .chaevizone-spec-list-con ul li:not(.first-item):after{display:none;}
+	.chaevizone-spec-list-con ul li:after{transform:translateY(1.2rem)}
+}
+
+/* ******************  MAIN :: Mega Zone ********************** */
+@media all and ( max-width: 1280px ){
+	#mainMegaStationCon{padding:10rem 0;}
+}
+@media all and ( max-width: 800px ){
+	#mainMegaStationCon{padding:10.4rem 0 40.1rem; }
+	#mainMegaStationCon .cm-section-bg-inner{background-position:25% 20%;}
+	.main-mega-container{justify-content:flex-start;}
+}
+
+/* ******************  MAIN :: 구독서비스 ********************** */
+/*@media all and ( max-width: 1280px ){
+	#mainSubscribeCon{padding:10rem 0;}
+}
+@media all and ( max-width: 800px ){
+	#mainSubscribeCon{padding:10.4rem 0 40.1rem; }
+	#mainSubscribeCon .cm-section-bg-inner{background:url(/images/main/main_subscribe_bg_m.jpg) no-repeat 0 50%; background-size:cover;}
+	.main-mega-container{justify-content:flex-start;}
+}*/
+/* ******************  MAIN ::  뉴스 ********************** */
+@media all and ( max-width: 1560px ){
+	.main-news-container .main-detail-btn{right:var(--area-padding)}
+}
+@media all and ( max-width: 1280px ){
+	#mainNewsCon{padding:8rem 0 10.6rem;}
+}
+@media all and ( max-width: 800px ){
+	.main-news-container .main-tit-box{text-align:center; margin-bottom:6.4rem}
+	.main-news-container .main-detail-btn{margin-top:3rem;}
+}
+@media all and ( max-width:480px ){
+	.main-news-container .news-item .news-item-inner{height:46rem; padding:3.7rem}
+	.main-news-container .news-item .news-item-inner .news-date{left:3.7rem; bottom:3.7rem;}
+}
+
+/* ******************  메인 :: 오른쪽 퀵메뉴 (Fullpage) ********************** */
+@media all and (max-width:1280px){
+	#fp-nav{display:none !important;}
+}

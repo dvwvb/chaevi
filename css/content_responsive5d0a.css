@@ -1,0 +1,403 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : content_responsive.css
+ * description : 서브페이지 컨텐츠 반응형 CSS
+ * date : 2022-03-14
+******************************************************** */
+
+
+/* ******************  서브공통 ********************** */
+@media all and (max-width:1220px){
+	/* -------- 공통 스크롤바  -------- */
+	.custom-scrollbar-wrapper .scroll-object{max-width:100%;}
+	/* -------- 공통 :: 탭 -------- */
+	.sub-tab-list-style .area{padding:0}
+}
+@media all and (max-width:1024px){
+	/* -------- 공통 :: 탭 -------- */
+	/* Tab Fixed Move*/
+	.sub-tab-list-style.top-fixed{top:80px;}
+}
+@media all and (max-width:800px){
+	.cm-content-tit{font-size:3rem}
+	/* -------- 공통 :: 모달 폼 -------- */
+	#cmContentModal{margin:50px var(--area-padding); max-width:none;}
+	#cmContentModal .modal-close-btn{top:-45px; right:0;}
+	.cm-content-modal-inner{padding:var(--area-padding)}
+	.cm-content-modal-inner .cm-content-tit{text-align:center; font-size:2.4rem}
+	.cm-content-modal-inner .bbs-write-tbl-tit{font-size:1.8rem}
+	/* -------- 공통 스크롤바  -------- */
+	.custom-scrollbar-wrapper{position:relative;margin-right:calc(-1* var(--area-padding)); cursor:move}
+	.custom-scrollbar-wrapper .scroll-object{max-width:none; width:800px; }
+	.cm-scroll-drag-guide {display:flex; justify-content:flex-end; margin-right:var(--area-padding); }
+	.cm-scroll-drag-guide .cm-scroll-drag-inner { position: relative; width:50px; height: 50px; }
+	.cm-scroll-drag-guide .cm-scroll-drag-inner:before { position:absolute; top:4px; right:0; width:100%; height:3px; background-color:#ccc; content:""; border-radius:5px;}
+	.cm-scroll-drag-guide .drag-tail { position: absolute; z-index: 1; left: 0px; top: 3px; animation:moveScrollAni 3s both infinite; }
+	.cm-scroll-drag-guide .drag-tail .tail{display:block; width: 25px; height: 5px; background-color: rgba(0, 0, 0, 0.7); border-radius:5px; opacity:1; }
+	.cm-scroll-drag-guide .drag-tail .hand-icon{ font-size:30px; color:#aaa }
+	@keyframes moveScrollAni {
+		0%, 10% {
+			left: 0;
+			margin-left: 0px;
+		}
+		50% {
+			left: 100%;
+			margin-left: -25px;
+		}
+		100% {
+			left: 0;
+			margin-left: 0px;
+		}
+	}
+	.scroll-object-box .mCSB_scrollTools.mCSB_scrollTools_horizontal{right:var(--area-padding)}
+	.scroll-object-box .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{height:8px; margin:5px auto; background-color:var(--sub-color1)}
+	.scroll-object-box .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail{height:4px;}
+	/* -------- 공통 :: 탭 -------- */
+	/* Tab 공통 스타일 */
+	.sub-tab-wrapper-style,
+	.sub-tab-list-style.top-fixed,
+	.sub-tab-list-style ul li a{height:40px; }
+	.sub-tab-list-style ul li a em{font-size:13px}
+	/* Tab Fixed Move*/
+	/* Mobile Tab Drop Menu */
+	.sub-drop-menu-style{position:relative;}
+	.sub-drop-open-btn-style{display:block; position:relative; padding:0 15px; height:40px; line-height:40px; font-size:15px; background-color:#333; box-sizing:border-box;}
+	.sub-drop-open-btn-style span{color:#fff; }
+	.sub-drop-open-btn-style .arrow{color:#fff; position:absolute; top:50%; right:15px; margin-top:-7px}
+	.sub-drop-open-btn-style.open .arrow{transform:rotate(180deg)}
+	.sub-drop-menu-style ul{display:none; margin:0; height:auto; position:absolute; top:100%; left:0px; right:0px; background-color:#fff; border:1px solid #ddd; border-top:0; z-index:11; box-sizing:border-box;}
+	.sub-drop-menu-style ul li{position:static; display:block; float:none; border:0; border-top:1px solid #eee; width:auto; background-color:transparent}
+	.sub-drop-menu-style ul li:first-child{border-top:0; border-left:0}
+	.sub-drop-menu-style ul li a{display:block; width:auto; height:auto; padding:10px 15px; border:0;}
+	.sub-drop-menu-style ul li a em{font-size:13px;}
+	.sub-drop-menu-style ul li.selected a{background-color:transparent;}
+	.sub-drop-menu-style ul li.selected a em{color:#f57f20; font-weight:600; }
+}
+@media all and (max-width:480px){
+	/* -------- 공통 :: 탭 -------- */
+	/* Tab Fixed Move*/	
+	.sub-tab-list-style.top-fixed{top:60px;}
+}
+
+
+/* ========================================================
+ * CHAEVI 
+======================================================== */
+/* ******************  CHAEVI :: 채비스토리 ********************** */
+@media all and (max-width:1820px){
+	/* con02 */
+	.brand-rnd-item{padding:22rem 5.5rem 20rem;}
+	.brand-rnd-item .con-box .square-item{padding:3rem 1rem;}
+}
+@media all and (max-width:1280px){
+	/* con02 */
+	.brand-rnd-item-wrap{flex-wrap:wrap;}
+	.brand-rnd-item{width:100%; border-right:0; border-bottom:1px solid rgba(246,246,246,0.1);;}
+	.brand-rnd-item{padding:3rem}
+	.brand-rnd-item .txt-box{min-height:auto;}
+}
+@media (min-width:801px) and (max-width:1280px){
+	/* con02 */
+	.brand-rnd-item .con-box.square-con-box{justify-content: center}
+	.brand-rnd-item .con-box .square-item{width:15%; margin:0 1rem;}
+}
+@media all and (max-width:800px){
+	#brandContent{margin-bottom:7em;}
+	.cm-tit-box{margin-bottom:2.17em;}
+	/* con02 */
+	.brand-rnd-item .txt-box .tit{font-size:2.8rem; margin-bottom:0;}
+	.brand-rnd-item .con-box{margin-top:2rem;}
+	.brand-rnd-item .con-box .circle-item{width:10rem; height:10rem;}
+	.brand-rnd-item .con-box .circle-item dl dd{font-size:3rem;}
+	.brand-rnd-item .con-box .circle-item p.txt{font-size:2rem;}
+	/* con03 */
+	.award-logo-list{margin-bottom:3em; flex-wrap:wrap;}
+	.award-logo-list .list-item{width:50%; margin-bottom:1em;}
+	.brand-certifi-con .certifi-tit{margin-bottom:2rem;}
+	.brand-certifi-con .certifi-list-con{flex-wrap:wrap;}
+	.brand-certifi-con .certifi-list-con .list-item{width:100%; padding:3rem 1.5rem 2rem; margin-bottom:1.5rem;}
+	.brand-certifi-con .certifi-list-con .list-item .tit{padding-bottom:2rem; margin-bottom:1.5rem;}
+	.brand-certifi-con .certifi-list-con .list-item .date-txt{margin-top:2rem;}
+	.certifi-table-box{width:100%; margin-bottom:4rem;}
+	.certifi-table-box .certifi-table tbody tr td{font-size:1.4rem}
+	/* con04 */
+	.brand-partner-item{flex-wrap:wrap;}
+	.brand-partner-item dt{width:100%; border-bottom:1px solid #eee; margin-bottom:1rem}
+	.brand-partner-item dt:before{background-size:70% auto;}
+	.brand-partner-item dt .partner-tit{padding-left:6.5rem;}
+	.brand-partner-item dd{display:flex; flex-wrap:wrap; width:auto; margin:0 -1rem}
+	.brand-partner-item dd span{display:flex; align-items:center;  margin:1rem; width:calc(25% - 2rem);}
+	.brand-partner-item dd span img{max-width:100%;}
+}
+
+/* ****************** 브랜드 소개 :: CI,BI ********************** */
+
+@media all and (max-width:1280px){
+	.ci-color-content .tit-box span svg{height:1.5rem}
+}
+@media all and (max-width:800px){
+	.brand-ci-content.con01{margin-bottom:7rem;}
+	/* 로고이미지 */
+	.brand-ci-con .img-box span{padding-top:220px;}
+	.brand-ci-con .btn-box{padding:3rem 0;}
+	.brand-ci-con .btn-box a{width:40%; height:5rem; line-height:5rem; padding:0 1.5rem;}
+	.brand-ci-con .btn-box a i{line-height:5rem;}
+	/* 전용색상 */
+	.brand-ci-color-con{flex-wrap:wrap;}
+	.ci-color-content{padding:3rem;}
+	.ci-color-content.con-01, .ci-color-content.con-02{width:100%;}
+	.ci-color-content.con-01 .color-info{display: block; text-align:right; margin-top:0;}
+	.ci-color-content.con-01 .color-info .info-item{margin-bottom:1.4rem; margin-right:0;}
+	.ci-color-content.con-01 .color-info .info-item:last-child{margin-bottom:0;}
+	.ci-color-content .tit-box span svg{height:2.6rem}
+}
+
+/* ******************  CHAEVI :: 채비요금제 ********************** */
+@media all and (max-width:1280px){
+	#brandPriceContent{padding-bottom:7rem;}
+	.price-banner-wrap{padding:13rem 0 18rem;}
+	.price-list-wrap{margin-top:-7.3em}
+	.price-list-item{padding:4rem 2rem}
+	.price-caution-box{margin-top:6em;}
+}
+@media all and (max-width:800px){
+	.price-banner-wrap{padding:8rem 0;}
+	.price-banner-wrap .cm-content-tit{line-height:1.4;}
+	.price-list-wrap{margin-top:2em; flex-wrap:wrap;}
+	.price-list-item{width:100%; margin-bottom:2rem;}
+	.price-list-item:last-child{margin-bottom:0;}
+	.price-list-item .tit{margin-bottom:0.7em; padding-bottom:0.7em}
+	.price-list-item .inner-price{margin-bottom:1.2em; padding-bottom:1.2em}
+	.price-plus-txt-box{margin-top:3em;}
+	.price-caution-box{padding:3rem 1.5rem; flex-wrap:wrap;}
+	.price-caution-box .caution-tit{width:100%; margin-bottom:2rem;}
+	.price-caution-box .caution-list{margin-left:0; padding-left:0;}
+	.price-caution-box .caution-list:before{display: none;}
+}
+
+/* ******************  CHAEVI :: APP ********************** */
+@media all and ( max-width: 1280px ){
+	/* App :: Logo */
+	.chaevi-app-logo-con img{max-width:100%;}
+}
+@media all and ( max-width: 800px ){
+	/* App :: 타이틀 */
+	.app-tit-box .app-downlod-btns{display:flex; align-items:center; justify-content:space-between; }
+	.app-tit-box .app-downlod-btns .app-download-btn{width:calc(50% - 1rem); height:5rem; font-size:1.5rem; margin:0;}
+	/* App :: Rollin */
+	.center-active-list-con{padding:5rem 0; transform:scale(0.8)}
+}
+
+/* ****************** CHAEVI :: 채비존 ********************** */
+@media all and ( max-width: 1560px ){
+	.sub-chaevizone-container .chaevizone-spec-list-con{left:var(--area-padding); right:var(--area-padding)}
+}
+@media all and ( max-width: 1280px ){
+	#brandZoneContent{padding-bottom:7rem;}
+	.sub-chaevizone-con.con01{background-position:80% 20%;}
+	.sub-chaevizone-container{padding-top:10rem; padding-bottom:10rem;}
+	.sub-chaevizone-container .chaevizone-spec-list-con{position:static;}
+}
+
+@media all and ( max-width: 800px ){
+	.sub-chaevizone-con.con01{background-size:cover !important;}
+	.chaevizone-spec-list-con ul li:after{display: none;}
+	.chaevizone-spec-list-con ul li.first-item:after{display: block; }
+}
+
+/* ****************** CHAEVI :: 채비존 ********************** */
+@media all and (max-width:1280px){
+	/* benefit */
+	.zone-list-item{padding:5.1rem 3rem; width:calc(33.33% - 1.5rem);}
+	.zone-list-item dl dd{padding-left:2rem;}
+	.zone-info-txt-con{padding-right:0; margin-top:4rem;}
+	.floor-txt-list li .tit-box{padding:3rem 2rem;}
+	.floor-txt-list li .tit-box i{right:2rem;}
+	.floor-txt-list li .txt-box{padding:2rem 2rem 4rem;}
+	#brandZoneContent .cm-example-txt{bottom:5rem; right:0rem;}
+}
+@media all and (max-width:800px){
+	.sub-chaevizone-con.con02, .sub-chaevizone-con.con03{margin-bottom:10rem;}
+	/* benefit */
+	.cheavi-zone-benefit-list{flex-wrap:wrap;}
+	.zone-list-item{width:100%; margin-bottom:1.5rem;}
+	.zone-list-item dl dd{padding-left:4rem;}
+	/* 층별안내 */
+	.chaevi-info-content{flex-wrap:wrap; /* flex-direction:column-reverse; */}
+	.zone-info-img-con{width:100%;}
+	.zone-info-txt-con{width:100%;}
+	.zone-info-txt-con .tit{font-size:3.5rem; margin-bottom:1rem;}
+	#brandZoneContent .cm-example-txt{bottom:0rem;}
+	/* 하단 배너 */
+	.chaevizone-tit-box .tit{font-size:3rem;}
+}
+
+/* ****************** CHAEVI :: 메가스테이션 ********************** */
+@media all and (max-width:1280px){
+	.station-slide-wrap .left-box .tit{font-size:4rem;}
+}
+@media all and (max-width:800px){
+	.station-top-banner .cm-example-txt{left:var(--area-padding); right:auto; bottom:2rem;}
+	.station-bottom-con{background-size:cover; padding-top:5rem;}
+	.station-slide-wrap{flex-wrap:wrap; }
+	.station-slide-wrap .left-box{width:100%; margin-bottom:4rem;}
+	.station-slide-wrap .left-box .tit{font-size:2.8rem; margin-bottom:2rem;}
+	.station-slide-wrap .left-box .txt01{font-size:2rem;}
+	.station-slide-wrap .left-box .txt02{font-size:1.5rem;}
+	.station-slide-wrap .right-box{width:100%;}
+	.station-slick-box .slick-arrow{left:0; top:0rem; transform:none; margin-top:0;}
+	.station-slick-box .slick-arrow.slick-next{margin-left:0rem; left:auto; right:0;}
+	.station-slick-box .slick-arrow img{width:70%}
+	.station-slide-wrap .right-box .cm-example-txt{transform:none; left:0; margin-left:0;}
+}
+
+/* ========================================================
+ * 채비 인프라
+======================================================== */
+/* ******************  채비 인프라 :: 충전소 찾기 ********************** */
+@media all and (max-width:800px){
+	/* -------- 충전소 찾기 :: 맵영역 -------- */
+	.search-overlay-con{/* left: 50% !important; top:50% !important; */ width:85vw; padding:6vw; /* bottom:auto; transform:translate(-50%,-50%) */}
+	.search-overlay-con .overlay-map-info-item dd .custom-radio-item-box{margin:0 -4px}
+	.search-overlay-con .overlay-map-info-item dd .custom-radio-item{margin:0 3px;}
+	/* -------- 충전소 찾기 :: 하단영역 -------- */
+	#searchDetailBox{flex-wrap:wrap; position:relative; left:auto; right:auto; bottom:auto;}
+	.search-detail-box{width:100%;}
+	.search-detail-select-box{width:50%;}
+	.search-detail-select-list{max-height:200px;}
+}
+
+/* ========================================================
+ * 채비 서비스
+======================================================== */
+/* ****************** 채비 서비스 :: 채비패스 ********************** */
+@media all and (max-width:1280px){
+	#serviceSubscribeContent .price-list-wrap{padding:0rem; box-sizing:border-box;}
+	#serviceSubscribeContent{padding-bottom:7rem;}
+	#serviceSubscribeContent .price-banner-wrap{padding:13rem 0 18rem;}
+}
+@media all and (max-width:800px){
+	.pc-block{display: none;}
+	#serviceSubscribeContent .price-banner-wrap{padding:8rem 0;}
+	.price-list-item.subscribe-item{width:100%;}
+	/* .subscribe-benefit-con{margin-top:10rem;} */
+	.subscribe-plus-txt-box{text-align:left;}
+	.subscribe-benefit-list{justify-content:space-between;}
+	.subscribe-benefit-list .subscribe-item{width:calc(33.33% - 1.5rem); margin:0; padding:3rem 1rem;}
+	.subscribe-benefit-list .subscribe-item .icon{margin-bottom:2rem; width:4rem;}
+	.subscribe-benefit-list .subscribe-item dl dt{font-size:1.6rem;}
+	.subscribe-benefit-list .subscribe-item dl dd{font-size:1.5rem;}
+
+}
+
+/* ******************  채비서비스 :: 채비 홈충전기 ********************** */
+@media all and (max-width:1280px){
+	/* -------- 홈충전기 신청 폼 -------- */
+	.charger-photo-thumb img{max-width:100%;}
+	.charger-info-con .charger-apply-btn{width:calc(50% - 1rem)}
+}
+@media all and (max-width:800px){
+	.charger-top-prd-container{display:block;}
+	.charger-photo-thumb{width:auto; text-align:center; }
+	.charger-photo-thumb img{margin-right:-10vw}
+	.charger-info-con{width:auto; padding-left:0; padding-bottom:5rem}
+	.charger-info-con .charger-tit-con .name{font-size:3.5rem}
+	#chargerApplyCon{}
+}
+
+/* ========================================================
+ * 랜드오너 파트너쉽
+======================================================== */
+/* -------- 충전소 설치 안내/신청 :: Before After-------- */
+@media all and ( max-width: 800px ){
+	.cd-image-container{display:none;}
+	.before-after-m-con{display:block;}
+	.before-after-m-con .before-item{margin-bottom:2rem;}
+	.before-after-m-con .before-item .before-after-tit{height:6rem; display:flex; align-items:center; justify-content:center; color:#fff; background-color:#000; font-size:2rem}
+	.before-after-m-con .before-item .before-after-tit.after{background-color:var(--main-color)}
+	.before-after-m-con .before-item img{width:100%;}
+}
+/* -------- 충전소 설치 안내/신청 :: 충전소 혜택 -------- */
+@media all and ( max-width: 800px ){
+	.before-after-container{margin-bottom:15rem;}
+	.charging-station-benefit-list{height:auto; display:block; background-size:cover;}
+	.charging-station-benefit-list:before{display:none;}
+	.charging-station-benefit-list .benefit-item{width:auto; padding:5rem 0; margin:0 var(--area-padding)}
+	.charging-station-benefit-list .benefit-item:first-child{border-bottom:1px solid rgba(255,255,255,0.3);}
+}
+/* --------  충전소 설치 안내/신청 확인 -------- */
+@media all and (max-width:800px){
+	.charging-station-modify-wrapper .cm-content-sub-tit{font-size:2.2rem}
+}
+
+/* ========================================================
+ * 고객지원
+======================================================== */
+/* ******************  고객지원 :: 뉴스 ********************** */
+@media all and (max-width:1280px){
+	.news-list-con .news-item{font-size:1.5rem;}
+}
+@media all and (max-width:800px){
+	.news-list-con{margin:0 -0.5rem}
+	.news-list-con .news-item{width:calc(50% - 1rem); margin:0 0.5rem 1rem; font-size:1.8rem}
+	.news-item .news-item-inner{height:22em; padding:1.5em}
+	.news-item .news-item-inner .news-tit{font-size:2rem; }
+	.news-item .news-item-inner .news-date{left:1.5em; bottom:1.5em}
+}
+@media all and (max-width:480px){
+	.news-item .news-item-inner{height:18em; }
+}
+
+/* ******************  고객지원 :: 채용 ********************** */
+@media all and (max-width:800px){
+	.recruit-board-container .bbs-list-row .column.bbs-recruit-part{display:none;}
+	.recruit-board-container .bbs-title .recruit-part-name{display:inline-block; font-size:1em}
+	.recruit-board-container .bbs-title{margin-top:10px}
+}
+
+/* ========================================================
+ * MEMBER
+======================================================== */
+/* ******************  회원가입 :: 선택 ********************** */
+@media all and (max-width:800px){
+	.join-select-list{display:block; margin:0;}
+	.join-select-list > li{width:auto; margin:0 0 10px 0;}
+}
+/* ******************  회원가입 :: 주의문구 ********************** */
+@media all and (max-width:800px){
+	.join-cuation-box dl{display:block;}
+	.join-cuation-box dl dt{width:auto; border-bottom:1px solid #bbb; padding-bottom:10px;}
+	.join-cuation-box dl dt br{display:none;}
+	.join-cuation-box dl dt:after{display:none;}
+	.join-cuation-box dl dd{width:auto; padding-left:0; padding-top:10px;}
+}
+
+/* ========================================================
+ * MYPAGE
+======================================================== */
+/* ******************  MYPAGE :: 간편결제 등록 ********************** */
+@media all and (max-width:800px){
+	.member-out-txt{text-align:center; margin-top:3rem}
+	.simple-pay-agree-con{display:block;}
+	.simple-pay-agree-con .pay-agree-item{width:auto; height:auto; flex-wrap:wrap; margin-bottom:5px}
+	.bbs-write-tbl td .write-sub-txt.inline{display:inline-block;}
+	.business-num-check{display:block; padding-left:0; margin-top:10px}
+	.pay-agree-privacy-box{position:static; padding:2rem 0; }
+}
+/* ******************  MYPAGE :: 회원카드 ********************** */
+@media all and (max-width:800px){
+	.card-list-tbl .bbs-list-row{text-align:left;}
+	.card-list-tbl .bbs-list-row .column{color:#333;}
+	.card-list-tbl .card-name{font-size:1.3em; font-weight:600; color:#444;}
+	.card-list-tbl .card-number{display:block; font-weight:500; margin-bottom:10px; font-size:1.1em}
+	.card-list-tbl .card-number.inline{display:inline-block;}
+	.card-list-tbl .bbs-list-row .column.bbs-inline{margin-top:10px}
+	.bbs-list-card-apply-list{padding-top:35px !important}
+	.bbs-list-card-apply-list .bbs-card-num{position:absolute; top:10px; left:0px;}
+	/* 신청취소버튼 */
+	.card-list-tbl .card-cancel{font-size:0.8rem; padding:0.3rem 0.5rem;}
+}
+/* ******************  MYPAGE :: 카드등록 ********************** */
+@media all and (max-width:800px){
+	.card-img-con img{display:inline-block; margin-bottom:10px; width:100%; max-width:366px;}
+}

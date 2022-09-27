@@ -1,0 +1,117 @@
+
+
+
+
+
+	
+	<article id="cmContentModal">
+		<button onclick="ajaxUnLoad();" title="Close" class="modal-close-btn"><i class="xi-close-thin"></i></button>
+		<div class="cm-content-modal-inner">
+			<h3 class="cm-content-tit">비공용 충전기 설치 신청</h3>
+			<form action="https://chaevi.com/kr/service/step02_ok.php" name="modal_form" id="modal_form" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="trade_code" value=""/>
+			<table class="bbs-write-tbl">
+				<caption>비공용 충전기 설치 신청 확인폼입니다.</caption>
+				<colgroup>
+					<col style="width:110px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">차량계약상태</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">차량제조사</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">차종</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">개인/법인 구분</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">주거형태</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">주거유형</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>	
+					</tr>
+					<tr>
+						<th scope="row">렌탈 업체</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>	
+					</tr>
+					<tr>
+						<th scope="row">신청자</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>	
+					</tr>
+					<tr>
+						<th scope="row"> 핸드폰번호</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>	
+					</tr>
+					<tr>
+						<th scope="row">이메일</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">설치 주소</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>
+					</tr>
+					<tr style="display:none;">
+						<th scope="row">카마스터</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>
+					</tr>
+					<tr style="display:none;">
+						<th scope="row">카마스터 연락처</th>
+						<td>
+							<input type="text" class="write-input" value="" readonly />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</form>
+			<div class="cm-btn-controls">
+				<button onclick="ajaxUnLoad();" title="Close" class="btn-style03 btn-small">이전</button><button type="button" class="btn-style01 btn-small" onClick="modal_sendit();">제출</button>
+			</div>
+		</div>
+	</article>
+
+<script>
+
+function modal_sendit(){
+
+	var f=document.modal_form;
+
+	f.submit();
+
+}
+
+</script>
