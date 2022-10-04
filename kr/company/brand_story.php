@@ -3,7 +3,7 @@
     <!-- container -->
     <div id="container">
     <?php include '../_inc/subMenu.php';?>
-    
+
         <!-- content -->
         <section id="content" class="wide">
             <section id="brandConWrap">
@@ -29,10 +29,7 @@
                                 </div>
                             </div>
                             <div class="scroll-object-box">
-                                <img
-                                    src="../images/content/brand_solution_img.png"
-                                    alt=""
-                                    class="scroll-object"/>
+                                <img src="../images/content/brand_solution_img.png" alt="" class="scroll-object"/>
                                 <!-- .scroll-object -->
                             </div>
                         </div>
@@ -41,13 +38,13 @@
                 </article>
 
                 <article class="brand-content con02">
-                    <div class="area">
-                        <div class="cm-tit-box" data-scroll="fade-up">
-                            <h3 class="cm-content-tit">R&D 역량에 집중하는 채비</h3>
-                            <p class="cm-content-txt">특허 36건 지적 재산권 등록 및
-                                <br class="m-br">출원 및 다양한 품질 인증서 취득 및 R&D 역량에 집중</p>
-                        </div>
-                    </div>
+                <div class="area">
+                <div class="cm-tit-box" data-scroll="fade-up">
+                <h3 class="cm-content-tit">R&D 역량에 집중하는 채비</h3>
+                <p class="cm-content-txt">특허 36건 지적 재산권 등록 및
+                <br class="m-br">출원 및 다양한 품질 인증서 취득 및 R&D 역량에 집중</p>
+                </div>
+                </div>
 
                     <div class="brand-rnd-con">
                         <div class="brand-rnd-item-wrap">
