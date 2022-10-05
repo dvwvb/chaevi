@@ -67,29 +67,29 @@
             <div id="gnbBg"></div>
             <ul class="clearfix">
                 <li class="gnb1">
-                    <a href="brand_story.html">
+                    <a href="brand_story.php">
                         <em class="en">CHAEVI</em>
                     </a>
                     <div class="gnb-2dep">
                         <ul>
                             <li>
-                                <a href="brand_story.html">
+                                <a href="brand_story.php">
                                     <span>채비 브랜드 소개</span></a>
                             </li>
                             <li>
-                                <a href="price.html">
+                                <a href="price.php">
                                     <span>채비 요금제</span></a>
                             </li>
                             <li>
-                                <a href="app.html">
+                                <a href="app.php">
                                     <span>채비 APP</span></a>
                             </li>
                             <li>
-                                <a href="zone.html">
+                                <a href="zone.php">
                                     <span>채비스테이</span></a>
                             </li>
                             <li>
-                                <a href="station.html">
+                                <a href="station.php">
                                     <span>메가스테이션</span></a>
                             </li>
                         </ul>
