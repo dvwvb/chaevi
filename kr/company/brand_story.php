@@ -1,9 +1,10 @@
-<?php include '../_inc/header.php';?>
-
+<?php include '../_inc/config.php'; ?>
+<!-- code -->
+<div id="wrap">
+    <?php include '../_inc/header.php'; ?>
     <!-- container -->
     <div id="container">
-    <?php include '../_inc/subMenu.php';?>
-
+        <?php include '../_inc/subMenu.php'; ?>
         <!-- content -->
         <section id="content" class="wide">
             <section id="brandConWrap">
@@ -13,7 +14,7 @@
                             <h3 class="cm-content-tit">채비 원스탑 솔루션</h3>
                             <p class="cm-content-txt">채비는 고객을 생각하는 기업으로
                                 <br class="m-br">One - Stop Solution 기반으로 미래산업을 선도하며
-                                <br/>제조, 납품, 설치, 운영, 사후관리 등 모든 영역을
+                                <br />제조, 납품, 설치, 운영, 사후관리 등 모든 영역을
                                 <br class="m-br">상호 연계하는 플랫폼 운영사 입니다.
                             </p>
                         </div>
@@ -29,7 +30,7 @@
                                 </div>
                             </div>
                             <div class="scroll-object-box">
-                                <img src="../images/content/brand_solution_img.png" alt="" class="scroll-object"/>
+                                <img src="../images/content/brand_solution_img.png" alt="" class="scroll-object" />
                                 <!-- .scroll-object -->
                             </div>
                         </div>
@@ -38,13 +39,14 @@
                 </article>
 
                 <article class="brand-content con02">
-                <div class="area">
-                <div class="cm-tit-box" data-scroll="fade-up">
-                <h3 class="cm-content-tit">R&D 역량에 집중하는 채비</h3>
-                <p class="cm-content-txt">특허 36건 지적 재산권 등록 및
-                <br class="m-br">출원 및 다양한 품질 인증서 취득 및 R&D 역량에 집중</p>
-                </div>
-                </div>
+                    <div class="area">
+                        <div class="cm-tit-box" data-scroll="fade-up">
+                            <h3 class="cm-content-tit">R&D 역량에 집중하는 채비</h3>
+                            <p class="cm-content-txt">특허 36건 지적 재산권 등록 및
+                                <br class="m-br">출원 및 다양한 품질 인증서 취득 및 R&D 역량에 집중
+                            </p>
+                        </div>
+                    </div>
 
                     <div class="brand-rnd-con">
                         <div class="brand-rnd-item-wrap">
@@ -91,7 +93,7 @@
                                 <div class="txt-box">
                                     <h4 class="tit">연구 개발</h4>
                                     <strong class="sub-tit">
-                                        - 국내 충전기 사업자 중 유일하게 조달청 우수제품 지정<br/>
+                                        - 국내 충전기 사업자 중 유일하게 조달청 우수제품 지정<br />
                                         - 전기차 충전 인프라 시장에서는 및 속도, 안정성 중요
                                     </strong>
                                     <p class="txt co-main">→기술경쟁력 확보하기 위해 연구개발비 증대
@@ -412,7 +414,7 @@
                                                 <td>3</td>
                                                 <td>2021.12.31</td>
                                                 <td>환경부</td>
-                                                <td>표창장<br/>(대기환경개선 및 무공해자동차 보급에 기여)</td>
+                                                <td>표창장<br />(대기환경개선 및 무공해자동차 보급에 기여)</td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
@@ -454,7 +456,7 @@
                                                 <td>10</td>
                                                 <td>2018.12.18</td>
                                                 <td>인더스트리어워드코리아</td>
-                                                <td>2018 인더스트리 어워드 코리아<br/>(전기차 충전부문 기술혁신 대상)</td>
+                                                <td>2018 인더스트리 어워드 코리아<br />(전기차 충전부문 기술혁신 대상)</td>
                                             </tr>
                                             <tr>
                                                 <td>11</td>
@@ -472,13 +474,13 @@
                                                 <td>13</td>
                                                 <td>2018.11.06</td>
                                                 <td>대구광역시</td>
-                                                <td>표창장<br/>(장애인 복지 증진과 지역사회 발전에 이바지)</td>
+                                                <td>표창장<br />(장애인 복지 증진과 지역사회 발전에 이바지)</td>
                                             </tr>
                                             <tr>
                                                 <td>14</td>
                                                 <td>2018.10.10</td>
                                                 <td>한국스마트그리드협회</td>
-                                                <td>표창장<br/>(스마트그리드 산업의 발전과 국가기술 경쟁력 강화)</td>
+                                                <td>표창장<br />(스마트그리드 산업의 발전과 국가기술 경쟁력 강화)</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -626,4 +628,4 @@
     </div>
     <!-- //container -->
 
-    <?php include '../_inc/footer.php';?>
+    <?php include '../_inc/footer.php'; ?>

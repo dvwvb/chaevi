@@ -32,12 +32,9 @@
                         </ul>
                         <div class="foot-sns-menu">
                             <ul class="clearfix">
-                                <li><a href="https://www.instagram.com/chaevi_official" target="_blank"
-                                        title="새창으로열기"><i class="xi-instagram"></i></a></li>
-                                <li><a href="https://blog.naver.com/chaevibrand" target="_blank"
-                                        title="새창으로열기"><i class="xi-naver"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCF6cyJkPc2FykdqYNQDEr1A/featured"
-                                        target="_blank" title="새창으로열기"><i class="xi-youtube-play"></i></a></li>
+                                <li><a href="https://www.instagram.com/chaevi_official" target="_blank" title="새창으로열기"><i class="xi-instagram"></i></a></li>
+                                <li><a href="https://blog.naver.com/chaevibrand" target="_blank" title="새창으로열기"><i class="xi-naver"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCF6cyJkPc2FykdqYNQDEr1A/featured" target="_blank" title="새창으로열기"><i class="xi-youtube-play"></i></a></li>
                                 <!-- <li><a href="" target="_blank" title="새창으로열기"><i class="xi-blogger"></i></a></li>
                             <li><a href="" target="_blank" title="새창으로열기"><i class="xi-twitter"></i></a></li> -->
                             </ul>
@@ -92,12 +89,13 @@
         </article>
         <!-- 푸터 하단 -->
         <article id="footerBottom">
-            <span class="foot-logo"><img src="https://chaevi.com/images/common/logo.svg"
-                    alt="채비 브랜드 소개" /></span>
+            <span class="foot-logo"><img src="https://chaevi.com/images/common/logo.svg" alt="채비 브랜드 소개" /></span>
             <div class="footer-copyright">Copyright &copy; 2022 All rights reserved | Daeyoung Chaevi</div>
         </article>
     </div>
-</footer> <!-- //footer -->
+</footer>
+<!-- //footer -->
+
 <section id="siteMapCon03" class="cm-sitemap-wrapper">
     <div class="cm-sitemap-container cm-sitemap-container-03">
         <div class="sitemap-bg cm-sitemap-bg">
@@ -108,8 +106,7 @@
             <section class="cm-sitemap-area-con area">
                 <div class="sitemap-modal-tit-con-03 cm-modal-tit-con">
                     <h1 class="cm-modal-tit" data-splitting>SITEMAP</h1>
-                    <button title="Close Sitemap" class="sitemap-close-btn cm-sitemap-close-btn"><i
-                            class="xi-close-thin"></i></button>
+                    <button title="Close Sitemap" class="sitemap-close-btn cm-sitemap-close-btn"><i class="xi-close-thin"></i></button>
                 </div>
                 <article class="sitemap-wrapper-style sitemap-wrapper-style03"></article>
             </section>
@@ -118,6 +115,7 @@
 </section>
 </div>
 <!-- //wrap -->
+
 <script type="text/javascript" src="../../js/vendor/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="../../js/plugin/slick.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
