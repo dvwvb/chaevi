@@ -12,12 +12,12 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="채비 스토리 - 채비 브랜드 소개 - CHAEVI - 채비 l 전기차 충전 원스탑 솔루션">
     <meta property="og:description" content="TIME TO CHAEVI 전기차 충전 통합 솔루션, 채비">
-    <meta property="og:image" content="../../images/common/logo.png">
+    <meta property="og:image" content="/images/common/logo.png">
     <meta property="og:url" content="brand_story.html">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="채비 스토리 - 채비 브랜드 소개 - CHAEVI - 채비 l 전기차 충전 원스탑 솔루션">
     <meta name="twitter:description" content="TIME TO CHAEVI 전기차 충전 통합 솔루션, 채비">
-    <meta name="twitter:image" content="../../images/common/logo.png">
+    <meta name="twitter:image" content="/images/common/logo.png">
     <meta name="twitter:domain" content="brand_story.html">
     <meta name="google-site-verification" content="">
     <meta name="naver-site-verification" content="71383cf0b9dcccb36cce886f717a445f59f2f7a0">
@@ -37,43 +37,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/default.css">
-    <link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/content5d0a.css?ver=220725">
-    <link rel="stylesheet" href="../../css/main5656.css?ver=220802" />
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/content5d0a.css?ver=220725">
+    <link rel="stylesheet" href="/css/main5656.css?ver=220802" />
     <link rel="stylesheet" href="../css/language.css" />
     <!-- 해당언어에서만 사용하는 css -->
-    <link rel="stylesheet" href="../../css/layout_responsive.css">
-    <link rel="stylesheet" href="../../css/content_responsive5d0a.css?ver=220725">
-    <link rel="stylesheet" href="../../css/main_responsiveaacb.css?ver=220722" />
-    <link rel="stylesheet" href="../../css/animate.css" />
+    <link rel="stylesheet" href="/css/layout_responsive.css">
+    <link rel="stylesheet" href="/css/content_responsive5d0a.css?ver=220725">
+    <link rel="stylesheet" href="/css/main_responsiveaacb.css?ver=220722" />
+    <link rel="stylesheet" href="/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- XEicon -->
     <!-- Board Skin -->
-    <link rel="stylesheet" href="../../css/common/cm_bbs_common.css">
-    <link rel="stylesheet" href="../../css/common/cm_board.css">
-    <link rel="stylesheet" href="../../css/common/cm_faq.css" />
-    <link rel="stylesheet" href="../../css/common/cm_sitemap.css" />
-    <link rel="stylesheet" href="../../css/common/cm_memberaacb.css?ver=220722" />
+    <link rel="stylesheet" href="/css/common/cm_bbs_common.css">
+    <link rel="stylesheet" href="/css/common/cm_board.css">
+    <link rel="stylesheet" href="/css/common/cm_faq.css" />
+    <link rel="stylesheet" href="/css/common/cm_sitemap.css" />
+    <link rel="stylesheet" href="/css/common/cm_memberaacb.css?ver=220722" />
     <!-- Plugin -->
-    <link rel="stylesheet" type="text/css" href="../../css/plugin/slick.css">
-    <link rel="stylesheet" type="text/css" href="../../css/plugin/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" type="text/css" href="../../css/plugin/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="/css/plugin/slick.css">
+    <link rel="stylesheet" type="text/css" href="/css/plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="/css/plugin/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../css/plugin/spotlight.css" />
+    <link rel="stylesheet" type="text/css" href="/css/plugin/spotlight.css" />
 
-    <script type="text/javascript" src="../../js/vendor/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="../../js/utile.js"></script>
+    <script type="text/javascript" src="/js/vendor/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/utile.js"></script>
 
     <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script>
 
     <script>
         //  1번째  대메뉴 인덱스
         dep1 = 1
-
         // dep1 = 01,
         dep2 = 01;
-
         // sub2_num 변수가 있을때 ( 3차메뉴 )
         dep3 = 01;
     </script>

@@ -116,21 +116,21 @@
 </div>
 <!-- //wrap -->
 
-<script type="text/javascript" src="../../js/vendor/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="../../js/plugin/slick.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/plugin/slick.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="../../js/plugin/gsap.min.js"></script>
-<script type="text/javascript" src="../../js/plugin/ScrollToPlugin.min.js"></script>
-<script type="text/javascript" src="../../js/plugin/splitting.min.js"></script>
-<script type="text/javascript" src="../../js/plugin/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="../../js/plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-<script type="text/javascript" src="../../js/plugin/jquery.magnific-popup.js"></script>
-<script type="text/javascript" src="../../js/plugin/spotlight.min.js"></script>
-<script type="text/javascript" src="../../js/functions6c06.js?ver=220627"></script>
-<script type="text/javascript" src="../../js/nav2b23.js?ver=220628_2"></script>
-<script type="text/javascript" src="../../js/layer_popup97d2.js?ver=220624"></script>
-<script type="text/javascript" src="../../js/commonaac7.js?ver=220707"></script>
-<script type="text/javascript" src="../../js/sub6c06.js?ver=220627"></script>
+<script type="text/javascript" src="/js/plugin/gsap.min.js"></script>
+<script type="text/javascript" src="/js/plugin/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" src="/js/plugin/splitting.min.js"></script>
+<script type="text/javascript" src="/js/plugin/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="/js/plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="/js/plugin/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="/js/plugin/spotlight.min.js"></script>
+<script type="text/javascript" src="/js/functions6c06.js?ver=220627"></script>
+<script type="text/javascript" src="/js/nav2b23.js?ver=220628_2"></script>
+<script type="text/javascript" src="/js/layer_popup97d2.js?ver=220624"></script>
+<script type="text/javascript" src="/js/commonaac7.js?ver=220707"></script>
+<script type="text/javascript" src="/js/sub6c06.js?ver=220627"></script>
 </body>
 
 </html>
