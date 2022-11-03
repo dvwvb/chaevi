@@ -73,24 +73,19 @@
                     <div class="gnb-2dep">
                         <ul>
                             <li>
-                                <a href="/kr/company/brand_story.php">
-                                    <span>채비 브랜드 소개</span></a>
+                                <a href="/kr/company/brand_story.php"><span>채비 브랜드 소개</span></a>
                             </li>
                             <li>
-                                <a href="/kr/company/price.php">
-                                    <span>채비 요금제</span></a>
+                                <a href="/kr/company/price.php"><span>채비 요금제</span></a>
                             </li>
                             <li>
-                                <a href="/kr/company/app.php">
-                                    <span>채비 APP</span></a>
+                                <a href="/kr/company/app.php"><span>채비 APP</span></a>
                             </li>
                             <li>
-                                <a href="/kr/company/zone.php">
-                                    <span>채비스테이</span></a>
+                                <a href="/kr/company/zone.php"><span>채비스테이</span></a>
                             </li>
                             <li>
-                                <a href="/kr/company/station.php">
-                                    <span>메가스테이션</span></a>
+                                <a href="/kr/company/station.php"><span>메가스테이션</span></a>
                             </li>
                         </ul>
                     </div>
@@ -100,8 +95,7 @@
                     <div class="gnb-2dep">
                         <ul>
                             <li>
-                                <a href="../infra/charging_station.html">
-                                    <span>채비 충전소 찾기</span></a>
+                                <a href="../infra/charging_station.html"><span>채비 충전소 찾기</span></a>
                             </li>
                         </ul>
                     </div>
@@ -110,15 +104,11 @@
                     <a href="../service/charger_install_apply.html">채비 서비스</a>
                     <div class="gnb-2dep">
                         <ul>
-                            <!--<li><a href="https://chaevi.com/kr/service/subscribe.php"><span>채비
-                                패스</span></a></li>-->
                             <li>
-                                <a href="../service/charger_install_apply.html">
-                                    <span>채비 홈충전기</span></a>
+                                <a href="../service/charger_install_apply.html"><span>채비 홈충전기</span></a>
                             </li>
                             <li>
-                                <a href="../service/member_card_apply.html">
-                                    <span>회원 카드 신청</span></a>
+                                <a href="../service/member_card_apply.html"><span>회원 카드 신청</span></a>
                             </li>
                         </ul>
                     </div>
@@ -128,12 +118,10 @@
                     <div class="gnb-2dep">
                         <ul>
                             <li>
-                                <a href="../partnership/charging_station_install.html">
-                                    <span>충전소 설치 신청</span></a>
+                                <a href="../partnership/charging_station_install.html"><span>충전소 설치 신청</span></a>
                             </li>
                             <li>
-                                <a href="../partnership/charging_station_install_check.html">
-                                    <span>충전소 설치 신청 확인</span></a>
+                                <a href="../partnership/charging_station_install_check.html"><span>충전소 설치 신청 확인</span></a>
                             </li>
                         </ul>
                     </div>
@@ -143,28 +131,22 @@
                     <div class="gnb-2dep">
                         <ul>
                             <li>
-                                <a href="../mypage/modify_check.html">
-                                    <span>마이페이지</span></a>
+                                <a href="../mypage/modify_check.html"><span>마이페이지</span></a>
                             </li>
                             <li>
-                                <a href="../customer/notice.html">
-                                    <span>공지사항</span></a>
+                                <a href="../customer/notice.html"><span>공지사항</span></a>
                             </li>
                             <li>
-                                <a href="../customer/faq.html">
-                                    <span>FAQ</span></a>
+                                <a href="../customer/faq.html"><span>FAQ</span></a>
                             </li>
                             <li>
-                                <a href="../customer/news.html">
-                                    <span>뉴스</span></a>
+                                <a href="../customer/news.html"><span>뉴스</span></a>
                             </li>
                             <li>
-                                <a href="../customer/recruit.html">
-                                    <span>채용</span></a>
+                                <a href="../customer/recruit.html"><span>채용</span></a>
                             </li>
                             <li>
-                                <a href="../customer/contact.html">
-                                    <span>Contact</span></a>
+                                <a href="../customer/contact.html"><span>Contact</span></a>
                             </li>
                         </ul>
                     </div>

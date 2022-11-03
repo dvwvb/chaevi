@@ -1,6 +1,5 @@
 Google Tag Manager
 
-
 1. 코드의 일부 react로 변경하기
 2. 공통파일 인클루드로 분리하기
 3. vscode 사용법 숙지하기
@@ -9,5 +8,5 @@ Google Tag Manager
 6. 모르는 css코드 숙지하기
 
 
-커밋 테스트
-
+2022-11-04
+자바스크립트 변수 -> PHP 변수 받아오기 확인중

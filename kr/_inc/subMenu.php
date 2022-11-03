@@ -1,11 +1,14 @@
+<?php include "../_inc/varItem.php"; ?>
+
 <article id="contentTopCon">
+
 	<!-- ****************** 상단정보 ********************** -->
 	<aside id="contentInfoCon" class="clearfix area-box" data-scroll="fade-up">
 		<div class="location">
 			<ul>
 				<li class="home"> <a href="../index.php" title="HOME"><i class="xi-home-o"></i></a> </li>
-				<li>CHAEVI</li>
-				<li>채비 요금제</li>
+				<li><?php echo $dep1t[$dep1]; ?></li>
+				<li><?php echo ",,"; ?></li>
 			</ul>
 		</div>
 		<h3 class="content-tit">채비 요금제</h3>
@@ -29,6 +32,7 @@
 		</div>
 	</aside>
 	<!-- // -->
+
 	<!-- 모바일 서브메뉴 1 -->
 	<aside id="topMenuM01" class="cm-top-menu clearfix" data-scroll="fade-up">
 		<div class="side-menu-inner clearfix">
