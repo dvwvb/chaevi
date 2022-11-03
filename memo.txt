@@ -10,3 +10,5 @@ Google Tag Manager
 
 2022-11-04
 자바스크립트 변수 -> PHP 변수 받아오기 확인중
+
+http://www.kiss7.kr/siteblog/9
