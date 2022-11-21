@@ -1,17 +1,22 @@
 <?php include "../_inc/varItem.php"; ?>
 
 <article id="contentTopCon">
-
 	<!-- ****************** 상단정보 ********************** -->
 	<aside id="contentInfoCon" class="clearfix area-box" data-scroll="fade-up">
+		<?php
+		$dep1 = "<script>document.write(dep1);</script>";
+		$dep2 = "<script>document.write(dep2);</script>";
+		echo $dep1;
+		echo $dep2;
+		?>
 		<div class="location">
 			<ul>
 				<li class="home"> <a href="../index.php" title="HOME"><i class="xi-home-o"></i></a> </li>
 				<li><?php echo $dep1t[$dep1]; ?></li>
-				<li><?php echo ",,"; ?></li>
+				<li><?php echo $dep2t[$dep1][$dep2]; ?></li>
 			</ul>
 		</div>
-		<h3 class="content-tit">채비 요금제</h3>
+		<h3 class="content-tit"><?php echo $dep2t[$dep1][$dep2]; ?></h3>
 	</aside>
 
 
